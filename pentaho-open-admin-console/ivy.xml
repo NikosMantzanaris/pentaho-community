@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="pentaho" module="${ivy.artifact.id}" revision="${project.revision}" />
+  <configurations>
+    <conf name="default" />
+    <conf name="runtime" visibility="public"/>
+    <conf name="source" />
+    <conf name="test" visibility="private" />
+    <conf name="codegen" visibility="private" />
+  </configurations>
+  
+  <publications>
+    <artifact name="${ivy.artifact.id}" type="jar" conf="default"/>
+    <artifact name="${ivy.artifact.id}" m:classifier="sources" type="source" ext="jar" conf="source"/>
+  </publications>
+  
+  
+  <dependencies defaultconf="default->default">
+  
+<!--=======================================================================
+      Compile (default) dependencies
+    ====================================================================-->
+    <!--  external dependencies -->
+    <dependency org="commons-httpclient"  name="commons-httpclient" rev="3.0.1" transitive="false" />
+    <dependency org="commons-codec"       name="commons-codec" rev="1.3" />
+    <dependency org="commons-collections" name="commons-collections" rev="3.2" />
+    <dependency org="commons-io"          name="commons-io" rev="1.4" />
+    <dependency org="commons-lang"        name="commons-lang" rev="2.2" />
+    <dependency org="commons-logging"     name="commons-logging" rev="1.1" transitive="false" />
+    <dependency org="dom4j"               name="dom4j" rev="1.6.1" transitive="false" />
+    <dependency org="jaxen"               name="jaxen" rev="1.1" transitive="false" />
+    <dependency org="org.springframework" name="spring" rev="2.5.6" transitive="false" />
+    <dependency org="org.springframework.security" name="spring-security-core" rev="2.0.5.RELEASE" transitive="false" />
+    <dependency org="org.slf4j" name="slf4j-log4j12" rev="1.5.8" />
+
+    <!-- hibernate related dependencies -->
+    <dependency org="net.sf.ehcache" name="ehcache-core" rev="2.0.1" />
+    <dependency org="org.hibernate"       name="hibernate" rev="3.2.6.ga">
+      <exclude org="commons-logging"      name="commons-logging" />
+      <exclude org="commons-collections"  name="commons-collections" />
+      <exclude org="dom4j"                name="dom4j" />
+      <exclude org="net.sf.ehcache"       name="ehcache" />  
+    </dependency>
+    <dependency org="org.hibernate"       name="hibernate-annotations" rev="3.3.1.GA">
+      <exclude org="commons-logging"      name="commons-logging" />
+      <exclude org="org.hibernate"        name="hibernate" />
+      <exclude org="net.sf.ehcache"       name="ehcache" />
+    </dependency>
+    
+    <!-- have to do a little magic here to get the jar instead of a POM file -->
+    <dependency org="org.hibernate"       name="ejb3-persistence" rev="1.0.1.GA">
+      <artifact                           name="ejb3-persistence" type="jar" />
+    </dependency>
+
+    
+<!--=======================================================================
+      Code Generation dependencies
+    ====================================================================-->
+    <!-- it doesn't matter what platform of gwt-dev we use here. GWT compile only cares about the API part of the jar -->
+    <dependency org="com.google.gwt" name="gwt-dev"  rev="2.0.3" conf="codegen->default"/>        
+        <!--    gwt-user needs to be excluded from the open-admin web assembly.-->
+    <dependency org="com.google.gwt" name="gwt-user" rev="2.0.3" conf="codegen->default" />
+    
+    <dependency org="org.zenica"      name="gwt-datepicker" rev="r30" conf="codegen->default" />
+    <dependency org="org.gwtwidgets" name="gwt-widgets" rev="0.2.0" conf="codegen->default" />
+    <dependency org="com.google.gwt" name="gwt-incubator" rev="2.0.1" 	conf="codegen->default"/>
+    <dependency org="com.allen_sauer" name="gwt-dnd" rev="3.0.1"      conf="codegen->default"/>
+
+    
+    <!-- The organization of GWT Widgets can not be varied since we do not create optimized versions of the GWT Widgets -->
+    <dependency org="pentaho" name="pentaho-gwt-widgets" rev="${dependency.pentaho-gwt-widgets.revision}" conf="codegen->default" changing="true">
+      <artifact name="pentaho-gwt-widgets"/>
+      <artifact name="pentaho-gwt-widgets" type="source" ext="jar" m:classifier="sources"/>
+    </dependency>
+    
+<!--=======================================================================
+      Runtime dependencies - need to verify that all of these are actually needed
+    ====================================================================-->
+    <dependency org="pentaho"         name="pentaho-bi-platform-api" rev="${project.revision}" conf="runtime->default" changing="true" >
+        <exclude org="org.springframework.security" name="spring-security-core" />
+        <exclude org="org.springframework" name="spring" />
+    </dependency>
+    <dependency org="pentaho"         name="pentaho-bi-platform-util" rev="${project.revision}" conf="runtime->default" transitive="false" changing="true" />
+    <dependency org="pentaho"         name="pentaho-bi-platform-engine-core" rev="${project.revision}" conf="runtime->default" transitive="false" changing="true" />
+    <dependency org="pentaho"         name="pentaho-bi-platform-engine-services" rev="${project.revision}" conf="runtime->default" transitive="false" changing="true" />    
+    <dependency org="pentaho"         name="pentaho-bi-platform-engine-security" rev="${project.revision}" conf="runtime->default" transitive="false" changing="true" />     
+    <dependency org="pentaho"         name="pentaho-bi-platform-security-userroledao" rev="${project.revision}" conf="runtime->default" transitive="false" changing="true" />
+    <dependency org="pentaho"         name="pentaho-bi-platform-repository" rev="${project.revision}" conf="runtime->default" transitive="false" changing="true" />
+
+    <dependency org="com.google.gwt"      name="gwt-servlet" rev="2.0.3" conf="runtime->default"/>
+    <dependency org="hsqldb"              name="hsqldb" rev="1.8.0.7"  conf="runtime->default"/>
+    <dependency org="mysql"               name="mysql-connector-java" rev="5.1.17"  conf="runtime->default"/>
+    
+<!--    exclude jetty's version of servlet api. it's checksum fails-->
+    <dependency org="org.mortbay.jetty"   name="jetty-plus" rev="6.1.2" conf="runtime->default" transitive="false"/>
+    <dependency org="org.mortbay.jetty"   name="jetty" rev="6.1.2" conf="runtime->default">
+        <exclude org="org.mortbay.jetty" name="servlet-api-2.5" />
+    </dependency>
+    
+<!--    Why are we using two different versions of jetty libs, 6.1.2 and 6.1.9?-->
+<!--    6.1.2 is found in ibiblio, but not 6.1.9, so it is deployed to pentaho repository-->
+    <dependency org="org.mortbay.jetty"   name="jetty-gwt" rev="6.1.9" conf="runtime->default" >  
+          <exclude org="org.mortbay.jetty" name="jetty-util" />
+          <exclude org="javax.servlet" name="servlet-api" />
+<!--          jetty is getting older versions of gwt jars-->
+          <exclude org="com.google.gwt" /> 
+    </dependency>  
+    <dependency org="jboss"               name="javassist" rev="3.4.ga" conf="runtime->default" />    
+    <dependency org="antlr"               name="antlr" rev="2.7.6" conf="runtime->default" />    
+    <dependency org="asm"                 name="asm" rev="2.2.3" conf="runtime->default" />    
+    <dependency org="asm"                 name="asm-attrs" rev="2.2.3" conf="runtime->default" />    
+    <dependency org="javax.transaction"   name="jta" rev="1.0.1B" conf="runtime->default" />    
+    <dependency org="javax.servlet"       name="servlet-api" rev="2.5" conf="runtime->default" />    
+    
+<!--=======================================================================
+      Test dependencies
+    ====================================================================-->
+    <dependency org="junit" name="junit" rev="4.4" conf="test->default"/>
+    
+  </dependencies>
+</ivy-module>

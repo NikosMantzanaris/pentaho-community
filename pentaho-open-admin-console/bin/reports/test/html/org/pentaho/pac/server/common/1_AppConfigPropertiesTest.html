@@ -1,0 +1,775 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: org.pentaho.pac.server.common.AppConfigPropertiesTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['org.pentaho.pac.server.common.AppConfigPropertiesTest'] = new Array();
+    
+        cur['ant.core.lib'] = '/usr/local/apache-ant-1.8.4/lib/ant.jar';
+    
+        cur['ant.file'] = '/opt/workspace-pentaho/pentaho-open-admin-console/build.xml';
+    
+        cur['ant.file.Pentaho Open Admin Console'] = '/opt/workspace-pentaho/pentaho-open-admin-console/build.xml';
+    
+        cur['ant.file.subfloor'] = '/opt/workspace-pentaho/pentaho-open-admin-console/build-res/subfloor.xml';
+    
+        cur['ant.file.subfloor-gwt'] = '/opt/workspace-pentaho/pentaho-open-admin-console/build-res/subfloor-gwt.xml';
+    
+        cur['ant.file.subfloor-pkg'] = '/opt/workspace-pentaho/pentaho-open-admin-console/build-res/subfloor-pkg.xml';
+    
+        cur['ant.file.type'] = 'file';
+    
+        cur['ant.file.type.Pentaho Open Admin Console'] = 'file';
+    
+        cur['ant.file.type.subfloor'] = 'file';
+    
+        cur['ant.file.type.subfloor-gwt'] = 'file';
+    
+        cur['ant.file.type.subfloor-pkg'] = 'file';
+    
+        cur['ant.home'] = '/usr/local/apache-ant-1.8.4';
+    
+        cur['ant.home.ivy.instance'] = '/usr/local/apache-ant-1.8.4';
+    
+        cur['ant.java.version'] = '1.6';
+    
+        cur['ant.library.dir'] = '/usr/local/apache-ant-1.8.4/lib';
+    
+        cur['ant.library.dir.ivy.instance'] = '/usr/local/apache-ant-1.8.4/lib';
+    
+        cur['ant.project.default-target'] = 'default';
+    
+        cur['ant.project.invoked-targets'] = 'default';
+    
+        cur['ant.project.name'] = 'Pentaho Open Admin Console';
+    
+        cur['ant.version'] = 'Apache Ant(TM) version 1.8.4 compiled on May 22 2012';
+    
+        cur['antcontrib.available'] = 'true';
+    
+        cur['antcontrib.build.cache.dir'] = '/home/andre/.subfloor/ant-contrib';
+    
+        cur['approot.stage.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/stage/administration-console';
+    
+        cur['basedir'] = '/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['basedir.ivy.instance'] = '/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['bin.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin';
+    
+        cur['classes.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/classes';
+    
+        cur['cobertura.data.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/cobertura-bin';
+    
+        cur['coberturareports.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/cobertura';
+    
+        cur['coberturareports.html.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/cobertura/html';
+    
+        cur['coberturareports.xml.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/cobertura/xml';
+    
+        cur['codegenlib.dir'] = 'lib';
+    
+        cur['dependency.pentaho-gwt-widgets.revision'] = '3.2.5';
+    
+        cur['devlib.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/dev-lib';
+    
+        cur['dist.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/dist';
+    
+        cur['dist.manifest.file'] = '/opt/workspace-pentaho/pentaho-open-admin-console/dist/MANIFEST.MF';
+    
+        cur['env._'] = '/usr/bin/ant';
+    
+        cur['env.COLORTERM'] = 'gnome-terminal';
+    
+        cur['env.DBUS_SESSION_BUS_ADDRESS'] = 'unix:abstract=/tmp/dbus-aOPmF2tyuE,guid=c9747b52a40866b7640269d900000043';
+    
+        cur['env.DEFAULTS_PATH'] = '/usr/share/gconf/ubuntu-2d.default.path';
+    
+        cur['env.DESKTOP_SESSION'] = 'ubuntu-2d';
+    
+        cur['env.DISPLAY'] = ':0';
+    
+        cur['env.GDMSESSION'] = 'ubuntu-2d';
+    
+        cur['env.GIO_LAUNCHED_DESKTOP_FILE'] = '/usr/share/applications/terminator.desktop';
+    
+        cur['env.GIO_LAUNCHED_DESKTOP_FILE_PID'] = '3045';
+    
+        cur['env.GNOME_DESKTOP_SESSION_ID'] = 'this-is-deprecated';
+    
+        cur['env.GNOME_KEYRING_CONTROL'] = '/tmp/keyring-bHgRGj';
+    
+        cur['env.GNOME_KEYRING_PID'] = '1839';
+    
+        cur['env.GPG_AGENT_INFO'] = '/tmp/keyring-bHgRGj/gpg:0:1';
+    
+        cur['env.GTK_MODULES'] = 'canberra-gtk-module:canberra-gtk-module';
+    
+        cur['env.HOME'] = '/home/andre';
+    
+        cur['env.JAVA_HOME'] = '/usr/lib/jvm/java-6-sun-1.6.0.26';
+    
+        cur['env.LANG'] = 'en_US.UTF-8';
+    
+        cur['env.LANGUAGE'] = 'en_US:en';
+    
+        cur['env.LC_COLLATE'] = 'en_US.UTF-8';
+    
+        cur['env.LC_CTYPE'] = 'en_US.UTF-8';
+    
+        cur['env.LC_MESSAGES'] = 'en_US.UTF-8';
+    
+        cur['env.LD_LIBRARY_PATH'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/../lib/amd64';
+    
+        cur['env.LESSCLOSE'] = '/usr/bin/lesspipe %s %s';
+    
+        cur['env.LESSOPEN'] = '| /usr/bin/lesspipe %s';
+    
+        cur['env.LOGNAME'] = 'andre';
+    
+        cur['env.LS_COLORS'] = 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:';
+    
+        cur['env.M3_HOME'] = '/opt/apache-maven-3.0.4';
+    
+        cur['env.MANDATORY_PATH'] = '/usr/share/gconf/ubuntu-2d.mandatory.path';
+    
+        cur['env.MAVEN_HOME'] = '/opt/apache-maven-3.0.4';
+    
+        cur['env.NLSPATH'] = '/usr/dt/lib/nls/msg/%L/%N.cat';
+    
+        cur['env.OLDPWD'] = '/opt/workspace-pentaho';
+    
+        cur['env.ORBIT_SOCKETDIR'] = '/tmp/orbit-andre';
+    
+        cur['env.PATH'] = '/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/ruby/bin:/opt/apache-maven-3.0.4/bin:/opt/play-2.0.2:/opt/play-2.0.2:/opt/apache-maven-3.0.4/bin:/home/andre/.rvm/bin';
+    
+        cur['env.PLAY_HOME'] = '/opt/play-2.0.2';
+    
+        cur['env.PWD'] = '/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['env.SESSION_MANAGER'] = 'local/Mestre-Linux:@/tmp/.ICE-unix/1850,unix/Mestre-Linux:/tmp/.ICE-unix/1850';
+    
+        cur['env.SHELL'] = '/bin/bash';
+    
+        cur['env.SHLVL'] = '1';
+    
+        cur['env.SSH_AGENT_PID'] = '1888';
+    
+        cur['env.SSH_AUTH_SOCK'] = '/tmp/keyring-bHgRGj/ssh';
+    
+        cur['env.TERM'] = 'xterm';
+    
+        cur['env.TERMINATOR_UUID'] = 'urn:uuid:ca4ea504-f831-47bb-84d7-d9c85971b87e';
+    
+        cur['env.UBUNTU_MENUPROXY'] = 'libappmenu.so';
+    
+        cur['env.USER'] = 'andre';
+    
+        cur['env.WINDOWID'] = '69206020';
+    
+        cur['env.XAUTHORITY'] = '/home/andre/.Xauthority';
+    
+        cur['env.XDG_CONFIG_DIRS'] = '/etc/xdg/xdg-ubuntu-2d:/etc/xdg';
+    
+        cur['env.XDG_CURRENT_DESKTOP'] = 'Unity';
+    
+        cur['env.XDG_DATA_DIRS'] = '/usr/share/ubuntu-2d:/usr/share/gnome:/usr/local/share/:/usr/share/';
+    
+        cur['env.XDG_SEAT_PATH'] = '/org/freedesktop/DisplayManager/Seat0';
+    
+        cur['env.XDG_SESSION_COOKIE'] = '39e7f2394558fba2e966dad800000009-1351774642.155730-73881512';
+    
+        cur['env.XDG_SESSION_PATH'] = '/org/freedesktop/DisplayManager/Session0';
+    
+        cur['env.XFILESEARCHPATH'] = '/usr/dt/app-defaults/%L/Dt';
+    
+        cur['file.encoding'] = 'UTF-8';
+    
+        cur['file.encoding.ivy.instance'] = 'UTF-8';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.encoding.pkg.ivy.instance'] = 'sun.io';
+    
+        cur['file.separator'] = '/';
+    
+        cur['file.separator.ivy.instance'] = '/';
+    
+        cur['gwt.common.build.file'] = './build-res/subfloor-gwt.xml';
+    
+        cur['gwt.output.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/gwt/output';
+    
+        cur['gwt-compile.localWorkers'] = '4';
+    
+        cur['gwt-compile.maxmemory'] = '512M';
+    
+        cur['gwt-compile.maxstack'] = '1024k';
+    
+        cur['gwt-dev.revision'] = '1.6.4';
+    
+        cur['gwt-log-level'] = 'INFO';
+    
+        cur['gwt-module.path'] = 'org.pentaho.pac.PentahoAdminConsole';
+    
+        cur['gwt-style'] = 'OBF';
+    
+        cur['headless.unittest'] = 'true';
+    
+        cur['impl.productID'] = 'POAC';
+    
+        cur['impl.title'] = 'Pentaho Administration Console';
+    
+        cur['impl.vendor'] = 'Your Company Here';
+    
+        cur['instrumented.classes.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/instrumented-classes';
+    
+        cur['isLinux'] = 'true';
+    
+        cur['ivy.artifact.group'] = 'pentaho';
+    
+        cur['ivy.artifact.id'] = 'pentaho-open-admin-console';
+    
+        cur['ivy.artifact.ivyfilename'] = 'ivy.xml';
+    
+        cur['ivy.artifact.ivypathname'] = '/opt/workspace-pentaho/pentaho-open-admin-console/dist/ivy.xml';
+    
+        cur['ivy.artifact.pomfile'] = '/opt/workspace-pentaho/pentaho-open-admin-console/dist/pom.xml';
+    
+        cur['ivy.basedir'] = '/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['ivy.basedir.ivy.instance'] = '/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['ivy.build.artifacts.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/build/artifacts';
+    
+        cur['ivy.build.artifacts.dir.ivy.instance'] = '/opt/workspace-pentaho/pentaho-open-admin-console/build/artifacts';
+    
+        cur['ivy.buildlist.ivyfilepath'] = 'ivy.xml';
+    
+        cur['ivy.buildlist.ivyfilepath.ivy.instance'] = 'ivy.xml';
+    
+        cur['ivy.cache.dir'] = '/home/andre/.ivy2/cache';
+    
+        cur['ivy.cache.dir.ivy.instance'] = '/home/andre/.ivy2/cache';
+    
+        cur['ivy.cache.resolution'] = '/home/andre/.ivy2/resol-cache${env.EXECUTOR_NUMBER}';
+    
+        cur['ivy.cache.resolution.ivy.instance'] = '/home/andre/.ivy2/resol-cache${env.EXECUTOR_NUMBER}';
+    
+        cur['ivy.cache.ttl.default'] = '10s';
+    
+        cur['ivy.cache.ttl.default.ivy.instance'] = '10s';
+    
+        cur['ivy.checksums'] = 'sha1,md5';
+    
+        cur['ivy.checksums.ivy.instance'] = 'sha1,md5';
+    
+        cur['ivy.conf.dir'] = 'file:/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['ivy.conf.dir.ivy.instance'] = 'file:/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['ivy.conf.url'] = 'file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml';
+    
+        cur['ivy.conf.url.ivy.instance'] = 'file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml';
+    
+        cur['ivy.configs'] = '*';
+    
+        cur['ivy.configurations'] = '*';
+    
+        cur['ivy.configurations.ivy.instance'] = '*';
+    
+        cur['ivy.default.always.check.exact.revision'] = 'false';
+    
+        cur['ivy.default.always.check.exact.revision.ivy.instance'] = 'false';
+    
+        cur['ivy.default.conf.dir'] = 'jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings';
+    
+        cur['ivy.default.conf.dir.ivy.instance'] = 'jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings';
+    
+        cur['ivy.default.ivy.user.dir'] = '/home/andre/.ivy2';
+    
+        cur['ivy.default.ivy.user.dir.ivy.instance'] = '/home/andre/.ivy2';
+    
+        cur['ivy.default.settings.dir'] = 'jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings';
+    
+        cur['ivy.default.settings.dir.ivy.instance'] = 'jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings';
+    
+        cur['ivy.deliver.ivy.pattern'] = '/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]';
+    
+        cur['ivy.deliver.ivy.pattern.ivy.instance'] = '/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]';
+    
+        cur['ivy.dep.file'] = 'ivy.xml';
+    
+        cur['ivy.dep.file.ivy.instance'] = 'ivy.xml';
+    
+        cur['ivy.deps.changed'] = 'false';
+    
+        cur['ivy.distrib.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/distrib';
+    
+        cur['ivy.distrib.dir.ivy.instance'] = '/opt/workspace-pentaho/pentaho-open-admin-console/distrib';
+    
+        cur['ivy.home'] = '/home/andre/.ivy2';
+    
+        cur['ivy.home.ivy.instance'] = '/home/andre/.ivy2';
+    
+        cur['ivy.isinstalled'] = 'true';
+    
+        cur['ivy.lib.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/lib';
+    
+        cur['ivy.lib.dir.ivy.instance'] = '/opt/workspace-pentaho/pentaho-open-admin-console/lib';
+    
+        cur['ivy.local.default.artifact.pattern'] = '[organisation]/[module]/[revision]/[type]s/[artifact]-[revision].[ext]';
+    
+        cur['ivy.local.default.artifact.pattern.ivy.instance'] = '[organisation]/[module]/[revision]/[type]s/[artifact]-[revision].[ext]';
+    
+        cur['ivy.local.default.ivy.pattern'] = '[organisation]/[module]/[revision]/[type]s/[artifact].[ext]';
+    
+        cur['ivy.local.default.ivy.pattern.ivy.instance'] = '[organisation]/[module]/[revision]/[type]s/[artifact].[ext]';
+    
+        cur['ivy.local.default.root'] = '/home/andre/.ivy2/local';
+    
+        cur['ivy.local.default.root.ivy.instance'] = '/home/andre/.ivy2/local';
+    
+        cur['ivy.log.modules.in.use'] = 'false';
+    
+        cur['ivy.log.modules.in.use.ivy.instance'] = 'false';
+    
+        cur['ivy.module'] = 'pentaho-open-admin-console';
+    
+        cur['ivy.nb.targets.copied'] = '1';
+    
+        cur['ivy.organisation'] = 'pentaho';
+    
+        cur['ivy.project.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['ivy.project.dir.ivy.instance'] = '/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['ivy.publish.src.artifacts.pattern'] = '/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]';
+    
+        cur['ivy.publish.src.artifacts.pattern.ivy.instance'] = '/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]';
+    
+        cur['ivy.report.output.pattern'] = '[organisation]-[module]-[conf].[ext]';
+    
+        cur['ivy.report.output.pattern.ivy.instance'] = '[organisation]-[module]-[conf].[ext]';
+    
+        cur['ivy.reports.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/ivy';
+    
+        cur['ivy.resolve.default.type.filter'] = '*';
+    
+        cur['ivy.resolve.default.type.filter.ivy.instance'] = '*';
+    
+        cur['ivy.resolved.configurations'] = 'test';
+    
+        cur['ivy.resolved.file'] = '/opt/workspace-pentaho/pentaho-open-admin-console/ivy.xml';
+    
+        cur['ivy.resolver.default.check.modified'] = 'false';
+    
+        cur['ivy.resolver.default.check.modified.ivy.instance'] = 'false';
+    
+        cur['ivy.retrieve.pattern'] = '/opt/workspace-pentaho/pentaho-open-admin-console/lib/[artifact]-[revision](-[classifier]).[ext]';
+    
+        cur['ivy.retrieve.pattern.ivy.instance'] = '/opt/workspace-pentaho/pentaho-open-admin-console/lib/[artifact]-[revision](-[classifier]).[ext]';
+    
+        cur['ivy.revision'] = '4.5-SNAPSHOT';
+    
+        cur['ivy.settings.dir'] = 'file:/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['ivy.settings.dir.ivy.instance'] = 'file:/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['ivy.settings.file'] = 'ivysettings.xml';
+    
+        cur['ivy.settings.file.ivy.instance'] = 'ivysettings.xml';
+    
+        cur['ivy.settings.url'] = 'file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml';
+    
+        cur['ivy.settings.url.ivy.instance'] = 'file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml';
+    
+        cur['ivy.settingsurl'] = 'file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml';
+    
+        cur['ivy.status'] = 'integration';
+    
+        cur['ivy.status.ivy.instance'] = 'integration';
+    
+        cur['ivy.targets.copied'] = 'true';
+    
+        cur['ivy.url'] = 'http://repo2.maven.org/maven2/org/apache/ivy/ivy/2.2.0/ivy-2.2.0.jar';
+    
+        cur['ivy.version'] = '2.2.0';
+    
+        cur['ivyfile'] = 'ivy.xml';
+    
+        cur['java.awt.graphicsenv'] = 'sun.awt.X11GraphicsEnvironment';
+    
+        cur['java.awt.graphicsenv.ivy.instance'] = 'sun.awt.X11GraphicsEnvironment';
+    
+        cur['java.awt.headless'] = 'true';
+    
+        cur['java.awt.printerjob'] = 'sun.print.PSPrinterJob';
+    
+        cur['java.awt.printerjob.ivy.instance'] = 'sun.print.PSPrinterJob';
+    
+        cur['java.class.path'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/instrumented-classes:/opt/workspace-pentaho/pentaho-open-admin-console/bin/classes:/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/classes:/opt/workspace-pentaho/pentaho-open-admin-console/lib/antlr-2.7.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-1.5.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-2.2.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-attrs-1.5.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-attrs-2.2.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/avalon-framework-4.1.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/cglib-2.1_3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-beanutils-1.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-codec-1.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-collections-3.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-httpclient-3.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-io-1.4.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-lang-2.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-logging-1.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/dom4j-1.6.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/ehcache-core-2.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/ejb3-persistence-1.0.1.GA.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/groovy-all-1.5.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-datepicker-r30.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-dev-2.0.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-dnd-3.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-incubator-2.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-servlet-2.0.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-user-2.0.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-widgets-0.2.0.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hibernate-3.2.6.ga.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hibernate-annotations-3.3.1.GA.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hibernate-commons-annotations-3.0.0.ga.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hsqldb-1.8.0.7.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/javassist-3.4.ga.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jaxen-1.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-6.1.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-gwt-6.1.9.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-plus-6.1.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-util-6.1.9.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jta-1.0.1B.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/log4j-1.2.14.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/logkit-1.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/mysql-connector-java-5.1.17.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-actionsequence-dom-TRUNK-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-api-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-engine-core-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-engine-security-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-engine-services-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-repository-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-security-userroledao-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-util-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-connections-TRUNK-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-gwt-widgets-3.2.5-sources.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-gwt-widgets-3.2.5.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-xul-core-3.3-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/servlet-api-2.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/servlet-api-2.5.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/slf4j-api-1.5.8.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/slf4j-log4j12-1.5.8.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/spring-2.5.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/spring-security-core-2.0.5.RELEASE.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/xml-apis-1.0.b2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/test-lib/junit-4.4.jar:/home/andre/.subfloor/cobertura/ant-launcher-__-1.7.0.jar:/home/andre/.subfloor/cobertura/asm-__-3.0.jar:/home/andre/.subfloor/cobertura/asm-tree-__-3.0.jar:/home/andre/.subfloor/cobertura/cobertura-__-1.9.4.1.jar:/home/andre/.subfloor/cobertura/log4j-__-1.2.9.jar:/home/andre/.subfloor/cobertura/oro-__-2.0.8.jar:/usr/local/apache-ant-1.8.4/lib/ant-launcher.jar:/usr/local/apache-ant-1.8.4/lib/ant.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit4.jar';
+    
+        cur['java.class.path.ivy.instance'] = '/usr/local/apache-ant-1.8.4/lib/ant-launcher.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-oro.jar:/usr/local/apache-ant-1.8.4/lib/ant-launcher.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit4.jar:/usr/local/apache-ant-1.8.4/lib/ant-commons-net.jar:/usr/local/apache-ant-1.8.4/lib/ant-commons-logging.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit.jar:/usr/local/apache-ant-1.8.4/lib/ant-jdepend.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-bsf.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-xalan2.jar:/usr/local/apache-ant-1.8.4/lib/ant-swing.jar:/usr/local/apache-ant-1.8.4/lib/ant-jai.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-log4j.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-regexp.jar:/usr/local/apache-ant-1.8.4/lib/ant-testutil.jar:/usr/local/apache-ant-1.8.4/lib/ant-jmf.jar:/usr/local/apache-ant-1.8.4/lib/ant-javamail.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-bcel.jar:/usr/local/apache-ant-1.8.4/lib/ant-antlr.jar:/usr/local/apache-ant-1.8.4/lib/ant-jsch.jar:/usr/local/apache-ant-1.8.4/lib/ant-netrexx.jar:/usr/local/apache-ant-1.8.4/lib/ant.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-resolver.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/lib/tools.jar';
+    
+        cur['java.class.version'] = '50.0';
+    
+        cur['java.class.version.ivy.instance'] = '50.0';
+    
+        cur['java.endorsed.dirs'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/endorsed';
+    
+        cur['java.endorsed.dirs.ivy.instance'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/endorsed';
+    
+        cur['java.ext.dirs'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext:/usr/java/packages/lib/ext';
+    
+        cur['java.ext.dirs.ivy.instance'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext:/usr/java/packages/lib/ext';
+    
+        cur['java.home'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre';
+    
+        cur['java.home.ivy.instance'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre';
+    
+        cur['java.io.tmpdir'] = '/tmp';
+    
+        cur['java.io.tmpdir.ivy.instance'] = '/tmp';
+    
+        cur['java.library.path'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib';
+    
+        cur['java.library.path.ivy.instance'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib';
+    
+        cur['java.runtime.name'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.name.ivy.instance'] = 'Java(TM) SE Runtime Environment';
+    
+        cur['java.runtime.version'] = '1.6.0_26-b03';
+    
+        cur['java.runtime.version.ivy.instance'] = '1.6.0_26-b03';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.name.ivy.instance'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.vendor.ivy.instance'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.6';
+    
+        cur['java.specification.version.ivy.instance'] = '1.6';
+    
+        cur['java.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.ivy.instance'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vendor.url'] = 'http://java.sun.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.vendor.url.bug.ivy.instance'] = 'http://java.sun.com/cgi-bin/bugreport.cgi';
+    
+        cur['java.vendor.url.ivy.instance'] = 'http://java.sun.com/';
+    
+        cur['java.version'] = '1.6.0_26';
+    
+        cur['java.version.ivy.instance'] = '1.6.0_26';
+    
+        cur['java.vm.info'] = 'mixed mode';
+    
+        cur['java.vm.info.ivy.instance'] = 'mixed mode';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) 64-Bit Server VM';
+    
+        cur['java.vm.name.ivy.instance'] = 'Java HotSpot(TM) 64-Bit Server VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.name.ivy.instance'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.vendor.ivy.instance'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.specification.version.ivy.instance'] = '1.0';
+    
+        cur['java.vm.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.vendor.ivy.instance'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.version'] = '20.1-b02';
+    
+        cur['java.vm.version.ivy.instance'] = '20.1-b02';
+    
+        cur['javac.debug'] = 'true';
+    
+        cur['javac.deprecation'] = 'true';
+    
+        cur['javac.maxmemory'] = '256M';
+    
+        cur['javac.source'] = '1.5';
+    
+        cur['javac.target'] = '1.5';
+    
+        cur['javadoc.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/javadoc';
+    
+        cur['javadoc.packagenames'] = 'org.pentaho.* ';
+    
+        cur['javadoc.tar.filename'] = 'pentaho-open-admin-console-4.5-SNAPSHOT-javadoc.tar.gz';
+    
+        cur['javadoc.zip.filename'] = 'pentaho-open-admin-console-4.5-SNAPSHOT-javadoc.zip';
+    
+        cur['junit.haltonfailure'] = 'no';
+    
+        cur['junit.maxmemory'] = '256M';
+    
+        cur['lib.dir'] = 'lib';
+    
+        cur['license.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['line.separator.ivy.instance'] = ' ';
+    
+        cur['manifest.file'] = '/opt/workspace-pentaho/pentaho-open-admin-console/resource/hibernate/META-INF/MANIFEST.MF';
+    
+        cur['net.sourceforge.cobertura.datafile'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/cobertura-bin/cobertura.ser';
+    
+        cur['os.arch'] = 'amd64';
+    
+        cur['os.arch.ivy.instance'] = 'amd64';
+    
+        cur['os.classifier'] = 'linux';
+    
+        cur['os.name'] = 'Linux';
+    
+        cur['os.name.ivy.instance'] = 'Linux';
+    
+        cur['os.version'] = '3.2.0-32-generic';
+    
+        cur['os.version.ivy.instance'] = '3.2.0-32-generic';
+    
+        cur['package.artifact.ivyfile'] = 'package-ivy.xml';
+    
+        cur['package.artifact.pomfile'] = 'package-pom.xml';
+    
+        cur['package.basename'] = 'pentaho-open-admin-console-package-4.5-SNAPSHOT';
+    
+        cur['package.id'] = 'pentaho-open-admin-console-package';
+    
+        cur['package.resdir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/package-res';
+    
+        cur['package.root.dir'] = 'administration-console';
+    
+        cur['path.separator'] = ':';
+    
+        cur['path.separator.ivy.instance'] = ':';
+    
+        cur['pentaho-copyright'] = 'This program is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License, version 2.1 as published by the Free Software  Foundation.  You should have received a copy of the GNU Lesser General Public License along with this  program; if not, you can obtain a copy at http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html  or from the Free Software Foundation, Inc.,  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  Copyright 2011 Pentaho Corporation.  All rights reserved. ';
+    
+        cur['project.revision'] = '4.5-SNAPSHOT';
+    
+        cur['release'] = 'false';
+    
+        cur['release.candidate.token'] = 'RC2';
+    
+        cur['release.major.number'] = '2';
+    
+        cur['release.milestone.number'] = '0';
+    
+        cur['release.minor.number'] = '0';
+    
+        cur['res.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/resource/hibernate';
+    
+        cur['resolve-init.skip'] = '';
+    
+        cur['sonar.classname'] = 'org.sonar.ant.SonarTask';
+    
+        cur['sonar.url'] = 'http://repo1.maven.org/maven2/org/codehaus/sonar-plugins/sonar-ant-task/1.2/sonar-ant-task-1.2.jar';
+    
+        cur['source.tar.filename'] = 'pentaho-open-admin-console-4.5-SNAPSHOT-sources.tar.gz';
+    
+        cur['source.zip.filename'] = 'pentaho-open-admin-console-4.5-SNAPSHOT-sources.zip';
+    
+        cur['src.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/src';
+    
+        cur['stage.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/stage';
+    
+        cur['subfloor.file'] = './subfloor.xml';
+    
+        cur['subfloor.resources.dir'] = '/home/andre/.subfloor';
+    
+        cur['subfloor.tmp.dir'] = '/home/andre/.subfloor/tmp';
+    
+        cur['subfloor-pkg.file'] = 'subfloor-pkg.xml';
+    
+        cur['sun.arch.data.model'] = '64';
+    
+        cur['sun.arch.data.model.ivy.instance'] = '64';
+    
+        cur['sun.boot.class.path'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/classes';
+    
+        cur['sun.boot.class.path.ivy.instance'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/classes';
+    
+        cur['sun.boot.library.path'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64';
+    
+        cur['sun.boot.library.path.ivy.instance'] = '/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.endian.ivy.instance'] = 'little';
+    
+        cur['sun.cpu.isalist'] = '';
+    
+        cur['sun.cpu.isalist.ivy.instance'] = '';
+    
+        cur['sun.desktop'] = 'gnome';
+    
+        cur['sun.desktop.ivy.instance'] = 'gnome';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.io.unicode.encoding.ivy.instance'] = 'UnicodeLittle';
+    
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.pentaho.pac.server.common.AppConfigPropertiesTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test/xml/TEST-org.pentaho.pac.server.common.AppConfigPropertiesTest.xml crashfile=/opt/workspace-pentaho/pentaho-open-admin-console/junitvmwatcher2191489832453807949.properties propsfile=/opt/workspace-pentaho/pentaho-open-admin-console/junit8489272963384227190.properties';
+    
+        cur['sun.java.command.ivy.instance'] = 'org.apache.tools.ant.launch.Launcher -cp ';
+    
+        cur['sun.java.launcher'] = 'SUN_STANDARD';
+    
+        cur['sun.java.launcher.ivy.instance'] = 'SUN_STANDARD';
+    
+        cur['sun.jnu.encoding'] = 'UTF-8';
+    
+        cur['sun.jnu.encoding.ivy.instance'] = 'UTF-8';
+    
+        cur['sun.management.compiler'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.management.compiler.ivy.instance'] = 'HotSpot 64-Bit Tiered Compilers';
+    
+        cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['sun.os.patch.level.ivy.instance'] = 'unknown';
+    
+        cur['svnant.use-javahl'] = 'false';
+    
+        cur['svnant.use-svnkit'] = 'true';
+    
+        cur['tattletale.classname'] = 'org.jboss.tattletale.ant.ReportTask';
+    
+        cur['tattletale.configfile'] = '';
+    
+        cur['tattletale.reports.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/tattletale';
+    
+        cur['tattletale.url'] = 'http://repo.pentaho.org/artifactory/repo/jboss/tattletale/1.1.2.Final/tattletale-1.1.2.Final.zip';
+    
+        cur['testbin.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/test';
+    
+        cur['testclasses.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/classes';
+    
+        cur['testlib.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/test-lib';
+    
+        cur['testreports.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test';
+    
+        cur['testreports.html.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test/html';
+    
+        cur['testreports.xml.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test/xml';
+    
+        cur['testsrc.dir'] = 'test';
+    
+        cur['user.country'] = 'US';
+    
+        cur['user.country.ivy.instance'] = 'US';
+    
+        cur['user.dir'] = '/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['user.dir.ivy.instance'] = '/opt/workspace-pentaho/pentaho-open-admin-console';
+    
+        cur['user.home'] = '/home/andre';
+    
+        cur['user.home.ivy.instance'] = '/home/andre';
+    
+        cur['user.language'] = 'en';
+    
+        cur['user.language.ivy.instance'] = 'en';
+    
+        cur['user.name'] = 'andre';
+    
+        cur['user.name.ivy.instance'] = 'andre';
+    
+        cur['user.timezone'] = '';
+    
+        cur['user.timezone.ivy.instance'] = 'America/Sao_Paulo';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class org.pentaho.pac.server.common.AppConfigPropertiesTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="1_AppConfigPropertiesTest.html">AppConfigPropertiesTest</a></td><td><a title="Display all tests" href="1_AppConfigPropertiesTest.html">2</a></td><td>0</td><td>0</td><td>0.218</td><td>2012-11-01T13:00:35</td><td>Mestre-Linux</td>
+</tr>
+</table>
+<h2>Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetInstance"></a>testGetInstance</td><td>Success</td><td></td><td>0.076</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testGetX"></a>testGetX</td><td>Success</td><td></td><td>0.090</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('org.pentaho.pac.server.common.AppConfigPropertiesTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<div class="Properties">
+<a href="./1_AppConfigPropertiesTest-out.html">
+                        System.out &raquo;
+                    </a>
+</div>
+</body>
+</html>

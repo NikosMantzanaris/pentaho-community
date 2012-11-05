@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="pentaho" module="pentaho-bi-platform-ui-foundation" revision="4.5.0-stable" status="integration" publication="20121101165009"/>
+  <configurations>
+    <conf name="default" extends="default-ext"/>
+    <conf name="default-ext"/>
+    <conf name="test" visibility="private"/>
+    <conf name="source"/>    
+  </configurations>
+  
+  <publications>
+    <artifact name="pentaho-bi-platform-ui-foundation" type="jar" conf="default"/>
+    <artifact name="pentaho-bi-platform-ui-foundation" m:classifier="sources" type="source" ext="jar" conf="source"/>
+  </publications>  
+  
+  <dependencies defaultconf="default-ext->default">
+    
+        <!--  external dependencies -->
+    <dependency org="org.springframework.security" name="spring-security-core" rev="2.0.5.RELEASE" transitive="false"/>
+    <dependency org="org.apache.xmlgraphics" name="batik-awt-util" rev="1.7"/>
+    <dependency org="org.apache.xmlgraphics" name="batik-dom" rev="1.7"/>
+    <dependency org="org.apache.xmlgraphics" name="batik-svggen" rev="1.7"/>
+    <dependency org="jfree" name="jcommon" rev="1.0.14"/>
+    <dependency org="jfree" name="jfreechart" rev="1.0.13">
+      <exclude org="jfree" name="jcommon"/>
+    </dependency>
+
+        <!--  internal dependencies -->
+    <dependency org="pentaho" name="pentaho-bi-platform-api" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-util" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-engine-core" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-engine-security" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-engine-services" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-repository" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    
+    <dependency org="pentaho" name="pentaho-metadata" rev="3.4.5" changing="true"/>
+  </dependencies>
+</ivy-module>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><module>
+
+	<!-- Inherit the core Web Toolkit stuff.                  -->
+	<inherits name="com.google.gwt.user.User"/>
+	<inherits name="org.pentaho.pac.PacServiceModule"/>
+	<inherits name="org.pentaho.pac.SchedulerServiceModule"/>
+	<inherits name="org.pentaho.pac.SubscriptionServiceModule"/>
+	<inherits name="org.pentaho.pac.SolutionRepositoryServiceModule"/>
+	<inherits name="org.pentaho.gwt.widgets.Widgets"/>
+	<inherits name="org.gwtwidgets.WidgetLibrary"/>
+
+    <stylesheet src='PentahoAdminConsole.css'/>
+	<source path="client"/>
+	<source path="common"/>
+</module>

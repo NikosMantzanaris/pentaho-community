@@ -1,0 +1,1416 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Mestre-Linux" id="0" name="PentahoAdminConsoleTest" package="org.pentaho.pac.client" tests="1" time="0.068" timestamp="2012-11-01T13:00:34">
+      <properties>
+          <property name="java.home.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre" />
+
+          <property name="env.TERMINATOR_UUID" value="urn:uuid:ca4ea504-f831-47bb-84d7-d9c85971b87e" />
+
+          <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/ubuntu-2d.default.path" />
+
+          <property name="ivy.configs" value="*" />
+
+          <property name="ant.home.ivy.instance" value="/usr/local/apache-ant-1.8.4" />
+
+          <property name="java.awt.graphicsenv.ivy.instance" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="ant.file.subfloor-pkg" value="/opt/workspace-pentaho/pentaho-open-admin-console/build-res/subfloor-pkg.xml" />
+
+          <property name="java.awt.printerjob.ivy.instance" value="sun.print.PSPrinterJob" />
+
+          <property name="env.LC_CTYPE" value="en_US.UTF-8" />
+
+          <property name="env.TERM" value="xterm" />
+
+          <property name="ant.library.dir" value="/usr/local/apache-ant-1.8.4/lib" />
+
+          <property name="ivy.artifact.id" value="pentaho-open-admin-console" />
+
+          <property name="ant.core.lib" value="/usr/local/apache-ant-1.8.4/lib/ant.jar" />
+
+          <property name="env.OLDPWD" value="/opt/workspace-pentaho" />
+
+          <property name="java.vm.info.ivy.instance" value="mixed mode" />
+
+          <property name="ivy.report.output.pattern.ivy.instance" value="[organisation]-[module]-[conf].[ext]" />
+
+          <property name="user.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="java.vm.version" value="20.1-b02" />
+
+          <property name="ivy.lib.dir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/lib" />
+
+          <property name="source.zip.filename" value="pentaho-open-admin-console-4.5-SNAPSHOT-sources.zip" />
+
+          <property name="path.separator.ivy.instance" value=":" />
+
+          <property name="lib.dir" value="lib" />
+
+          <property name="java.library.path.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="svnant.use-javahl" value="false" />
+
+          <property name="ivyfile" value="ivy.xml" />
+
+          <property name="ivy.resolve.default.type.filter.ivy.instance" value="*" />
+
+          <property name="java.version.ivy.instance" value="1.6.0_26" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="javadoc.tar.filename" value="pentaho-open-admin-console-4.5-SNAPSHOT-javadoc.tar.gz" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="file.separator.ivy.instance" value="/" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="ivy.status" value="integration" />
+
+          <property name="ivy.local.default.ivy.pattern.ivy.instance" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="env.XDG_DATA_DIRS" value="/usr/share/ubuntu-2d:/usr/share/gnome:/usr/local/share/:/usr/share/" />
+
+          <property name="ivy.settings.dir.ivy.instance" value="file:/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="gwt-module.path" value="org.pentaho.pac.PentahoAdminConsole" />
+
+          <property name="isLinux" value="true" />
+
+          <property name="env.GNOME_KEYRING_CONTROL" value="/tmp/keyring-bHgRGj" />
+
+          <property name="env.UBUNTU_MENUPROXY" value="libappmenu.so" />
+
+          <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="user.name" value="andre" />
+
+          <property name="ivy.retrieve.pattern.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/lib/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="ivy.settingsurl" value="file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.pentaho.pac.client.PentahoAdminConsoleTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test/xml/TEST-org.pentaho.pac.client.PentahoAdminConsoleTest.xml crashfile=/opt/workspace-pentaho/pentaho-open-admin-console/junitvmwatcher8521016559573118696.properties propsfile=/opt/workspace-pentaho/pentaho-open-admin-console/junit1377637029766538633.properties" />
+
+          <property name="env.USER" value="andre" />
+
+          <property name="env.LOGNAME" value="andre" />
+
+          <property name="sun.arch.data.model.ivy.instance" value="64" />
+
+          <property name="env.GPG_AGENT_INFO" value="/tmp/keyring-bHgRGj/gpg:0:1" />
+
+          <property name="ivy.default.conf.dir" value="jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings" />
+
+          <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated" />
+
+          <property name="tattletale.configfile" value="" />
+
+          <property name="user.country" value="US" />
+
+          <property name="gwt-style" value="OBF" />
+
+          <property name="manifest.file" value="/opt/workspace-pentaho/pentaho-open-admin-console/resource/hibernate/META-INF/MANIFEST.MF" />
+
+          <property name="gwt-dev.revision" value="1.6.4" />
+
+          <property name="env.GNOME_KEYRING_PID" value="1839" />
+
+          <property name="env.GTK_MODULES" value="canberra-gtk-module:canberra-gtk-module" />
+
+          <property name="java.vm.specification.version.ivy.instance" value="1.0" />
+
+          <property name="coberturareports.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/cobertura" />
+
+          <property name="javadoc.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/javadoc" />
+
+          <property name="ivy.default.always.check.exact.revision" value="false" />
+
+          <property name="os.name.ivy.instance" value="Linux" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/endorsed" />
+
+          <property name="java.endorsed.dirs.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/endorsed" />
+
+          <property name="junit.haltonfailure" value="no" />
+
+          <property name="ivy.lib.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/lib" />
+
+          <property name="env.GDMSESSION" value="ubuntu-2d" />
+
+          <property name="release" value="false" />
+
+          <property name="codegenlib.dir" value="lib" />
+
+          <property name="java.vm.specification.version" value="1.0" />
+
+          <property name="devlib.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/dev-lib" />
+
+          <property name="net.sourceforge.cobertura.datafile" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/cobertura-bin/cobertura.ser" />
+
+          <property name="java.awt.headless" value="true" />
+
+          <property name="ivy.settings.url" value="file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml" />
+
+          <property name="env.SHLVL" value="1" />
+
+          <property name="java.vendor" value="Sun Microsystems Inc." />
+
+          <property name="approot.stage.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/stage/administration-console" />
+
+          <property name="user.dir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="ivy.default.settings.dir" value="jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings" />
+
+          <property name="ivy.settings.file" value="ivysettings.xml" />
+
+          <property name="java.runtime.name.ivy.instance" value="Java(TM) SE Runtime Environment" />
+
+          <property name="env.LANGUAGE" value="en_US:en" />
+
+          <property name="javac.debug" value="true" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="ivy.local.default.artifact.pattern.ivy.instance" value="[organisation]/[module]/[revision]/[type]s/[artifact]-[revision].[ext]" />
+
+          <property name="ivy.cache.dir.ivy.instance" value="/home/andre/.ivy2/cache" />
+
+          <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
+
+          <property name="ivy.default.settings.dir.ivy.instance" value="jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings" />
+
+          <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0" />
+
+          <property name="ant.file.type.subfloor" value="file" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
+
+          <property name="java.io.tmpdir.ivy.instance" value="/tmp" />
+
+          <property name="ant.file.subfloor" value="/opt/workspace-pentaho/pentaho-open-admin-console/build-res/subfloor.xml" />
+
+          <property name="ant.home" value="/usr/local/apache-ant-1.8.4" />
+
+          <property name="ivy.resolved.file" value="/opt/workspace-pentaho/pentaho-open-admin-console/ivy.xml" />
+
+          <property name="ant.java.version" value="1.6" />
+
+          <property name="java.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="env.GIO_LAUNCHED_DESKTOP_FILE_PID" value="3045" />
+
+          <property name="ivy.resolved.configurations" value="test" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="basedir" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="java.vendor.url.ivy.instance" value="http://java.sun.com/" />
+
+          <property name="java.ext.dirs.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="ivy.version" value="2.2.0" />
+
+          <property name="env.PATH" value="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/ruby/bin:/opt/apache-maven-3.0.4/bin:/opt/play-2.0.2:/opt/play-2.0.2:/opt/apache-maven-3.0.4/bin:/home/andre/.rvm/bin" />
+
+          <property name="headless.unittest" value="true" />
+
+          <property name="ivy.artifact.ivyfilename" value="ivy.xml" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="release.major.number" value="2" />
+
+          <property name="ivy.resolver.default.check.modified.ivy.instance" value="false" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ivy.conf.dir" value="file:/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="ivy.artifact.ivypathname" value="/opt/workspace-pentaho/pentaho-open-admin-console/dist/ivy.xml" />
+
+          <property name="gwt.output.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/gwt/output" />
+
+          <property name="user.language" value="en" />
+
+          <property name="testclasses.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/classes" />
+
+          <property name="stage.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/stage" />
+
+          <property name="ant.file.type.subfloor-gwt" value="file" />
+
+          <property name="java.vm.specification.vendor.ivy.instance" value="Sun Microsystems Inc." />
+
+          <property name="gwt-compile.maxstack" value="1024k" />
+
+          <property name="ant.project.invoked-targets" value="default" />
+
+          <property name="env.LC_MESSAGES" value="en_US.UTF-8" />
+
+          <property name="tattletale.url" value="http://repo.pentaho.org/artifactory/repo/jboss/tattletale/1.1.2.Final/tattletale-1.1.2.Final.zip" />
+
+          <property name="subfloor.tmp.dir" value="/home/andre/.subfloor/tmp" />
+
+          <property name="ivy.report.output.pattern" value="[organisation]-[module]-[conf].[ext]" />
+
+          <property name="java.class.version" value="50.0" />
+
+          <property name="sun.boot.library.path.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64" />
+
+          <property name="os.version.ivy.instance" value="3.2.0-32-generic" />
+
+          <property name="env.ORBIT_SOCKETDIR" value="/tmp/orbit-andre" />
+
+          <property name="package.resdir" value="/opt/workspace-pentaho/pentaho-open-admin-console/package-res" />
+
+          <property name="sun.desktop.ivy.instance" value="gnome" />
+
+          <property name="javadoc.zip.filename" value="pentaho-open-admin-console-4.5-SNAPSHOT-javadoc.zip" />
+
+          <property name="ivy.project.dir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu-2d:/etc/xdg" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="env.LC_COLLATE" value="en_US.UTF-8" />
+
+          <property name="tattletale.classname" value="org.jboss.tattletale.ant.ReportTask" />
+
+          <property name="ivy.configurations.ivy.instance" value="*" />
+
+          <property name="ivy.home.ivy.instance" value="/home/andre/.ivy2" />
+
+          <property name="env.SHELL" value="/bin/bash" />
+
+          <property name="ivy.artifact.group" value="pentaho" />
+
+          <property name="coberturareports.html.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/cobertura/html" />
+
+          <property name="gwt.common.build.file" value="./build-res/subfloor-gwt.xml" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre" />
+
+          <property name="testreports.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test" />
+
+          <property name="ant.project.default-target" value="default" />
+
+          <property name="ivy.cache.resolution" value="/home/andre/.ivy2/resol-cache${env.EXECUTOR_NUMBER}" />
+
+          <property name="env.DESKTOP_SESSION" value="ubuntu-2d" />
+
+          <property name="ivy.status.ivy.instance" value="integration" />
+
+          <property name="ant.library.dir.ivy.instance" value="/usr/local/apache-ant-1.8.4/lib" />
+
+          <property name="sun.java.launcher.ivy.instance" value="SUN_STANDARD" />
+
+          <property name="antcontrib.available" value="true" />
+
+          <property name="svnant.use-svnkit" value="true" />
+
+          <property name="ivy.basedir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="junit.maxmemory" value="256M" />
+
+          <property name="java.vm.vendor.ivy.instance" value="Sun Microsystems Inc." />
+
+          <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-aOPmF2tyuE,guid=c9747b52a40866b7640269d900000043" />
+
+          <property name="ivy.cache.ttl.default.ivy.instance" value="10s" />
+
+          <property name="ivy.default.conf.dir.ivy.instance" value="jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings" />
+
+          <property name="subfloor-pkg.file" value="subfloor-pkg.xml" />
+
+          <property name="env.XDG_SESSION_COOKIE" value="39e7f2394558fba2e966dad800000009-1351774642.155730-73881512" />
+
+          <property name="ivy.settings.url.ivy.instance" value="file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml" />
+
+          <property name="env.SSH_AUTH_SOCK" value="/tmp/keyring-bHgRGj/ssh" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="ivy.local.default.ivy.pattern" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="env.DISPLAY" value=":0" />
+
+          <property name="javac.deprecation" value="true" />
+
+          <property name="ant.file" value="/opt/workspace-pentaho/pentaho-open-admin-console/build.xml" />
+
+          <property name="testbin.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test" />
+
+          <property name="ivy.buildlist.ivyfilepath.ivy.instance" value="ivy.xml" />
+
+          <property name="javadoc.packagenames" value="org.pentaho.* " />
+
+          <property name="user.country.ivy.instance" value="US" />
+
+          <property name="testsrc.dir" value="test" />
+
+          <property name="ivy.reports.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/ivy" />
+
+          <property name="ivy.local.default.artifact.pattern" value="[organisation]/[module]/[revision]/[type]s/[artifact]-[revision].[ext]" />
+
+          <property name="dist.manifest.file" value="/opt/workspace-pentaho/pentaho-open-admin-console/dist/MANIFEST.MF" />
+
+          <property name="env.PLAY_HOME" value="/opt/play-2.0.2" />
+
+          <property name="ivy.default.always.check.exact.revision.ivy.instance" value="false" />
+
+          <property name="cobertura.data.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/cobertura-bin" />
+
+          <property name="sun.cpu.isalist.ivy.instance" value="" />
+
+          <property name="testreports.xml.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test/xml" />
+
+          <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="package.artifact.pomfile" value="package-pom.xml" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="file.encoding.ivy.instance" value="UTF-8" />
+
+          <property name="java.vendor.url" value="http://java.sun.com/" />
+
+          <property name="env.MANDATORY_PATH" value="/usr/share/gconf/ubuntu-2d.mandatory.path" />
+
+          <property name="ant.file.type.subfloor-pkg" value="file" />
+
+          <property name="ivy.cache.ttl.default" value="10s" />
+
+          <property name="env.M3_HOME" value="/opt/apache-maven-3.0.4" />
+
+          <property name="env.XDG_CURRENT_DESKTOP" value="Unity" />
+
+          <property name="ivy.settings.file.ivy.instance" value="ivysettings.xml" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64" />
+
+          <property name="ivy.cache.resolution.ivy.instance" value="/home/andre/.ivy2/resol-cache${env.EXECUTOR_NUMBER}" />
+
+          <property name="env.MAVEN_HOME" value="/opt/apache-maven-3.0.4" />
+
+          <property name="file.encoding.pkg.ivy.instance" value="sun.io" />
+
+          <property name="tattletale.reports.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/tattletale" />
+
+          <property name="ivy.local.default.root" value="/home/andre/.ivy2/local" />
+
+          <property name="ivy.resolver.default.check.modified" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="ant.project.name" value="Pentaho Open Admin Console" />
+
+          <property name="ivy.local.default.root.ivy.instance" value="/home/andre/.ivy2/local" />
+
+          <property name="sun.management.compiler.ivy.instance" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="java.vendor.url.bug.ivy.instance" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+
+          <property name="res.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/resource/hibernate" />
+
+          <property name="ivy.conf.dir.ivy.instance" value="file:/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="env.LESSCLOSE" value="/usr/bin/lesspipe %s %s" />
+
+          <property name="ant.file.type.Pentaho Open Admin Console" value="file" />
+
+          <property name="ivy.buildlist.ivyfilepath" value="ivy.xml" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="coberturareports.xml.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/cobertura/xml" />
+
+          <property name="impl.vendor" value="Your Company Here" />
+
+          <property name="env.SSH_AGENT_PID" value="1888" />
+
+          <property name="ivy.default.ivy.user.dir" value="/home/andre/.ivy2" />
+
+          <property name="java.runtime.version.ivy.instance" value="1.6.0_26-b03" />
+
+          <property name="project.revision" value="4.5-SNAPSHOT" />
+
+          <property name="user.home" value="/home/andre" />
+
+          <property name="env.JAVA_HOME" value="/usr/lib/jvm/java-6-sun-1.6.0.26" />
+
+          <property name="java.vm.version.ivy.instance" value="20.1-b02" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="ivy.dep.file" value="ivy.xml" />
+
+          <property name="release.milestone.number" value="0" />
+
+          <property name="package.artifact.ivyfile" value="package-ivy.xml" />
+
+          <property name="user.timezone.ivy.instance" value="America/Sao_Paulo" />
+
+          <property name="env.XAUTHORITY" value="/home/andre/.Xauthority" />
+
+          <property name="ivy.deliver.ivy.pattern.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="ivy.conf.url" value="file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml" />
+
+          <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="ivy.deps.changed" value="false" />
+
+          <property name="java.version" value="1.6.0_26" />
+
+          <property name="sonar.url" value="http://repo1.maven.org/maven2/org/codehaus/sonar-plugins/sonar-ant-task/1.2/sonar-ant-task-1.2.jar" />
+
+          <property name="sun.jnu.encoding.ivy.instance" value="UTF-8" />
+
+          <property name="sun.io.unicode.encoding.ivy.instance" value="UnicodeLittle" />
+
+          <property name="testreports.html.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test/html" />
+
+          <property name="env._" value="/usr/bin/ant" />
+
+          <property name="env.SESSION_MANAGER" value="local/Mestre-Linux:@/tmp/.ICE-unix/1850,unix/Mestre-Linux:/tmp/.ICE-unix/1850" />
+
+          <property name="env.LD_LIBRARY_PATH" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/../lib/amd64" />
+
+          <property name="sun.java.command.ivy.instance" value="org.apache.tools.ant.launch.Launcher -cp " />
+
+          <property name="package.id" value="pentaho-open-admin-console-package" />
+
+          <property name="package.root.dir" value="administration-console" />
+
+          <property name="basedir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="ivy.conf.url.ivy.instance" value="file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml" />
+
+          <property name="gwt-compile.maxmemory" value="512M" />
+
+          <property name="java.specification.vendor.ivy.instance" value="Sun Microsystems Inc." />
+
+          <property name="env.LESSOPEN" value="| /usr/bin/lesspipe %s" />
+
+          <property name="ivy.build.artifacts.dir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/build/artifacts" />
+
+          <property name="ivy.cache.dir" value="/home/andre/.ivy2/cache" />
+
+          <property name="classes.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/classes" />
+
+          <property name="user.language.ivy.instance" value="en" />
+
+          <property name="java.class.path.ivy.instance" value="/usr/local/apache-ant-1.8.4/lib/ant-launcher.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-oro.jar:/usr/local/apache-ant-1.8.4/lib/ant-launcher.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit4.jar:/usr/local/apache-ant-1.8.4/lib/ant-commons-net.jar:/usr/local/apache-ant-1.8.4/lib/ant-commons-logging.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit.jar:/usr/local/apache-ant-1.8.4/lib/ant-jdepend.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-bsf.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-xalan2.jar:/usr/local/apache-ant-1.8.4/lib/ant-swing.jar:/usr/local/apache-ant-1.8.4/lib/ant-jai.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-log4j.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-regexp.jar:/usr/local/apache-ant-1.8.4/lib/ant-testutil.jar:/usr/local/apache-ant-1.8.4/lib/ant-jmf.jar:/usr/local/apache-ant-1.8.4/lib/ant-javamail.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-bcel.jar:/usr/local/apache-ant-1.8.4/lib/ant-antlr.jar:/usr/local/apache-ant-1.8.4/lib/ant-jsch.jar:/usr/local/apache-ant-1.8.4/lib/ant-netrexx.jar:/usr/local/apache-ant-1.8.4/lib/ant.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-resolver.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/lib/tools.jar" />
+
+          <property name="source.tar.filename" value="pentaho-open-admin-console-4.5-SNAPSHOT-sources.tar.gz" />
+
+          <property name="javac.source" value="1.5" />
+
+          <property name="env.PWD" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="sun.cpu.endian.ivy.instance" value="little" />
+
+          <property name="line.separator" value=" " />
+
+          <property name="java.specification.version" value="1.6" />
+
+          <property name="ivy.publish.src.artifacts.pattern" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ivy.isinstalled" value="true" />
+
+          <property name="ivy.retrieve.pattern" value="/opt/workspace-pentaho/pentaho-open-admin-console/lib/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="ivy.organisation" value="pentaho" />
+
+          <property name="ivy.targets.copied" value="true" />
+
+          <property name="release.candidate.token" value="RC2" />
+
+          <property name="env.GIO_LAUNCHED_DESKTOP_FILE" value="/usr/share/applications/terminator.desktop" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/classes" />
+
+          <property name="javac.target" value="1.5" />
+
+          <property name="bin.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin" />
+
+          <property name="ivy.resolve.default.type.filter" value="*" />
+
+          <property name="java.specification.version.ivy.instance" value="1.6" />
+
+          <property name="license.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="src.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/src" />
+
+          <property name="ivy.basedir" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="ivy.log.modules.in.use.ivy.instance" value="false" />
+
+          <property name="os.classifier" value="linux" />
+
+          <property name="ant.file.subfloor-gwt" value="/opt/workspace-pentaho/pentaho-open-admin-console/build-res/subfloor-gwt.xml" />
+
+          <property name="java.specification.name.ivy.instance" value="Java Platform API Specification" />
+
+          <property name="env.HOME" value="/home/andre" />
+
+          <property name="line.separator.ivy.instance" value=" " />
+
+          <property name="user.home.ivy.instance" value="/home/andre" />
+
+          <property name="ivy.publish.src.artifacts.pattern.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="instrumented.classes.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/instrumented-classes" />
+
+          <property name="ivy.deliver.ivy.pattern" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="ant.file.Pentaho Open Admin Console" value="/opt/workspace-pentaho/pentaho-open-admin-console/build.xml" />
+
+          <property name="dist.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/dist" />
+
+          <property name="dependency.pentaho-gwt-widgets.revision" value="3.2.5" />
+
+          <property name="resolve-init.skip" value="" />
+
+          <property name="ivy.checksums.ivy.instance" value="sha1,md5" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="testlib.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/test-lib" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="ivy.default.ivy.user.dir.ivy.instance" value="/home/andre/.ivy2" />
+
+          <property name="ivy.project.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="ivy.revision" value="4.5-SNAPSHOT" />
+
+          <property name="java.runtime.version" value="1.6.0_26-b03" />
+
+          <property name="sonar.classname" value="org.sonar.ant.SonarTask" />
+
+          <property name="ivy.artifact.pomfile" value="/opt/workspace-pentaho/pentaho-open-admin-console/dist/pom.xml" />
+
+          <property name="ivy.home" value="/home/andre/.ivy2" />
+
+          <property name="sun.boot.class.path.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/classes" />
+
+          <property name="java.vendor.ivy.instance" value="Sun Microsystems Inc." />
+
+          <property name="env.COLORTERM" value="gnome-terminal" />
+
+          <property name="ivy.distrib.dir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="java.vm.specification.name.ivy.instance" value="Java Virtual Machine Specification" />
+
+          <property name="ivy.dep.file.ivy.instance" value="ivy.xml" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="javac.maxmemory" value="256M" />
+
+          <property name="ivy.url" value="http://repo2.maven.org/maven2/org/apache/ivy/ivy/2.2.0/ivy-2.2.0.jar" />
+
+          <property name="java.class.path" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/instrumented-classes:/opt/workspace-pentaho/pentaho-open-admin-console/bin/classes:/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/classes:/opt/workspace-pentaho/pentaho-open-admin-console/lib/antlr-2.7.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-1.5.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-2.2.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-attrs-1.5.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-attrs-2.2.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/avalon-framework-4.1.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/cglib-2.1_3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-beanutils-1.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-codec-1.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-collections-3.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-httpclient-3.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-io-1.4.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-lang-2.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-logging-1.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/dom4j-1.6.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/ehcache-core-2.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/ejb3-persistence-1.0.1.GA.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/groovy-all-1.5.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-datepicker-r30.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-dev-2.0.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-dnd-3.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-incubator-2.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-servlet-2.0.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-user-2.0.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-widgets-0.2.0.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hibernate-3.2.6.ga.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hibernate-annotations-3.3.1.GA.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hibernate-commons-annotations-3.0.0.ga.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hsqldb-1.8.0.7.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/javassist-3.4.ga.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jaxen-1.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-6.1.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-gwt-6.1.9.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-plus-6.1.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-util-6.1.9.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jta-1.0.1B.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/log4j-1.2.14.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/logkit-1.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/mysql-connector-java-5.1.17.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-actionsequence-dom-TRUNK-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-api-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-engine-core-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-engine-security-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-engine-services-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-repository-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-security-userroledao-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-util-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-connections-TRUNK-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-gwt-widgets-3.2.5-sources.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-gwt-widgets-3.2.5.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-xul-core-3.3-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/servlet-api-2.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/servlet-api-2.5.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/slf4j-api-1.5.8.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/slf4j-log4j12-1.5.8.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/spring-2.5.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/spring-security-core-2.0.5.RELEASE.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/xml-apis-1.0.b2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/test-lib/junit-4.4.jar:/home/andre/.subfloor/cobertura/ant-launcher-__-1.7.0.jar:/home/andre/.subfloor/cobertura/asm-__-3.0.jar:/home/andre/.subfloor/cobertura/asm-tree-__-3.0.jar:/home/andre/.subfloor/cobertura/cobertura-__-1.9.4.1.jar:/home/andre/.subfloor/cobertura/log4j-__-1.2.9.jar:/home/andre/.subfloor/cobertura/oro-__-2.0.8.jar:/usr/local/apache-ant-1.8.4/lib/ant-launcher.jar:/usr/local/apache-ant-1.8.4/lib/ant.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit4.jar" />
+
+          <property name="antcontrib.build.cache.dir" value="/home/andre/.subfloor/ant-contrib" />
+
+          <property name="ivy.settings.dir" value="file:/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="gwt-log-level" value="INFO" />
+
+          <property name="os.version" value="3.2.0-32-generic" />
+
+          <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
+
+          <property name="sun.desktop" value="gnome" />
+
+          <property name="env.WINDOWID" value="69206020" />
+
+          <property name="java.class.version.ivy.instance" value="50.0" />
+
+          <property name="ivy.module" value="pentaho-open-admin-console" />
+
+          <property name="os.arch.ivy.instance" value="amd64" />
+
+          <property name="env.LANG" value="en_US.UTF-8" />
+
+          <property name="java.vm.name.ivy.instance" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="ivy.nb.targets.copied" value="1" />
+
+          <property name="pentaho-copyright" value="This program is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License, version 2.1 as published by the Free Software  Foundation.  You should have received a copy of the GNU Lesser General Public License along with this  program; if not, you can obtain a copy at http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html  or from the Free Software Foundation, Inc.,  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  Copyright 2011 Pentaho Corporation.  All rights reserved. " />
+
+          <property name="package.basename" value="pentaho-open-admin-console-package-4.5-SNAPSHOT" />
+
+          <property name="subfloor.file" value="./subfloor.xml" />
+
+          <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+
+          <property name="ivy.log.modules.in.use" value="false" />
+
+          <property name="impl.title" value="Pentaho Administration Console" />
+
+          <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="ivy.build.artifacts.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/build/artifacts" />
+
+          <property name="subfloor.resources.dir" value="/home/andre/.subfloor" />
+
+          <property name="ivy.checksums" value="sha1,md5" />
+
+          <property name="sun.os.patch.level.ivy.instance" value="unknown" />
+
+          <property name="ivy.configurations" value="*" />
+
+          <property name="ivy.distrib.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.4 compiled on May 22 2012" />
+
+          <property name="release.minor.number" value="0" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="gwt-compile.localWorkers" value="4" />
+
+          <property name="user.name.ivy.instance" value="andre" />
+
+          <property name="impl.productID" value="POAC" />
+
+      </properties>
+
+      <testcase classname="org.pentaho.pac.client.PentahoAdminConsoleTest" name="testDummy" time="0.0010" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Mestre-Linux" id="1" name="AppConfigPropertiesTest" package="org.pentaho.pac.server.common" tests="2" time="0.218" timestamp="2012-11-01T13:00:35">
+      <properties>
+          <property name="java.home.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre" />
+
+          <property name="env.TERMINATOR_UUID" value="urn:uuid:ca4ea504-f831-47bb-84d7-d9c85971b87e" />
+
+          <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/ubuntu-2d.default.path" />
+
+          <property name="ivy.configs" value="*" />
+
+          <property name="ant.home.ivy.instance" value="/usr/local/apache-ant-1.8.4" />
+
+          <property name="java.awt.graphicsenv.ivy.instance" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="ant.file.subfloor-pkg" value="/opt/workspace-pentaho/pentaho-open-admin-console/build-res/subfloor-pkg.xml" />
+
+          <property name="java.awt.printerjob.ivy.instance" value="sun.print.PSPrinterJob" />
+
+          <property name="env.LC_CTYPE" value="en_US.UTF-8" />
+
+          <property name="env.TERM" value="xterm" />
+
+          <property name="ant.library.dir" value="/usr/local/apache-ant-1.8.4/lib" />
+
+          <property name="ivy.artifact.id" value="pentaho-open-admin-console" />
+
+          <property name="ant.core.lib" value="/usr/local/apache-ant-1.8.4/lib/ant.jar" />
+
+          <property name="env.OLDPWD" value="/opt/workspace-pentaho" />
+
+          <property name="java.vm.info.ivy.instance" value="mixed mode" />
+
+          <property name="ivy.report.output.pattern.ivy.instance" value="[organisation]-[module]-[conf].[ext]" />
+
+          <property name="user.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="java.vm.version" value="20.1-b02" />
+
+          <property name="ivy.lib.dir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/lib" />
+
+          <property name="source.zip.filename" value="pentaho-open-admin-console-4.5-SNAPSHOT-sources.zip" />
+
+          <property name="path.separator.ivy.instance" value=":" />
+
+          <property name="lib.dir" value="lib" />
+
+          <property name="java.library.path.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="svnant.use-javahl" value="false" />
+
+          <property name="ivyfile" value="ivy.xml" />
+
+          <property name="ivy.resolve.default.type.filter.ivy.instance" value="*" />
+
+          <property name="java.version.ivy.instance" value="1.6.0_26" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="javadoc.tar.filename" value="pentaho-open-admin-console-4.5-SNAPSHOT-javadoc.tar.gz" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="file.separator.ivy.instance" value="/" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="ivy.status" value="integration" />
+
+          <property name="ivy.local.default.ivy.pattern.ivy.instance" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="env.XDG_DATA_DIRS" value="/usr/share/ubuntu-2d:/usr/share/gnome:/usr/local/share/:/usr/share/" />
+
+          <property name="ivy.settings.dir.ivy.instance" value="file:/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="gwt-module.path" value="org.pentaho.pac.PentahoAdminConsole" />
+
+          <property name="isLinux" value="true" />
+
+          <property name="env.GNOME_KEYRING_CONTROL" value="/tmp/keyring-bHgRGj" />
+
+          <property name="env.UBUNTU_MENUPROXY" value="libappmenu.so" />
+
+          <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="user.name" value="andre" />
+
+          <property name="ivy.retrieve.pattern.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/lib/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="ivy.settingsurl" value="file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.pentaho.pac.server.common.AppConfigPropertiesTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test/xml/TEST-org.pentaho.pac.server.common.AppConfigPropertiesTest.xml crashfile=/opt/workspace-pentaho/pentaho-open-admin-console/junitvmwatcher2191489832453807949.properties propsfile=/opt/workspace-pentaho/pentaho-open-admin-console/junit8489272963384227190.properties" />
+
+          <property name="env.USER" value="andre" />
+
+          <property name="env.LOGNAME" value="andre" />
+
+          <property name="sun.arch.data.model.ivy.instance" value="64" />
+
+          <property name="env.GPG_AGENT_INFO" value="/tmp/keyring-bHgRGj/gpg:0:1" />
+
+          <property name="ivy.default.conf.dir" value="jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings" />
+
+          <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated" />
+
+          <property name="tattletale.configfile" value="" />
+
+          <property name="user.country" value="US" />
+
+          <property name="gwt-style" value="OBF" />
+
+          <property name="manifest.file" value="/opt/workspace-pentaho/pentaho-open-admin-console/resource/hibernate/META-INF/MANIFEST.MF" />
+
+          <property name="gwt-dev.revision" value="1.6.4" />
+
+          <property name="env.GNOME_KEYRING_PID" value="1839" />
+
+          <property name="env.GTK_MODULES" value="canberra-gtk-module:canberra-gtk-module" />
+
+          <property name="java.vm.specification.version.ivy.instance" value="1.0" />
+
+          <property name="coberturareports.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/cobertura" />
+
+          <property name="javadoc.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/javadoc" />
+
+          <property name="ivy.default.always.check.exact.revision" value="false" />
+
+          <property name="os.name.ivy.instance" value="Linux" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/endorsed" />
+
+          <property name="java.endorsed.dirs.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/endorsed" />
+
+          <property name="junit.haltonfailure" value="no" />
+
+          <property name="ivy.lib.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/lib" />
+
+          <property name="env.GDMSESSION" value="ubuntu-2d" />
+
+          <property name="release" value="false" />
+
+          <property name="codegenlib.dir" value="lib" />
+
+          <property name="java.vm.specification.version" value="1.0" />
+
+          <property name="devlib.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/dev-lib" />
+
+          <property name="net.sourceforge.cobertura.datafile" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/cobertura-bin/cobertura.ser" />
+
+          <property name="java.awt.headless" value="true" />
+
+          <property name="ivy.settings.url" value="file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml" />
+
+          <property name="env.SHLVL" value="1" />
+
+          <property name="java.vendor" value="Sun Microsystems Inc." />
+
+          <property name="approot.stage.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/stage/administration-console" />
+
+          <property name="user.dir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="ivy.default.settings.dir" value="jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings" />
+
+          <property name="ivy.settings.file" value="ivysettings.xml" />
+
+          <property name="java.runtime.name.ivy.instance" value="Java(TM) SE Runtime Environment" />
+
+          <property name="env.LANGUAGE" value="en_US:en" />
+
+          <property name="javac.debug" value="true" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="ivy.local.default.artifact.pattern.ivy.instance" value="[organisation]/[module]/[revision]/[type]s/[artifact]-[revision].[ext]" />
+
+          <property name="ivy.cache.dir.ivy.instance" value="/home/andre/.ivy2/cache" />
+
+          <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
+
+          <property name="ivy.default.settings.dir.ivy.instance" value="jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings" />
+
+          <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0" />
+
+          <property name="ant.file.type.subfloor" value="file" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
+
+          <property name="java.io.tmpdir.ivy.instance" value="/tmp" />
+
+          <property name="ant.file.subfloor" value="/opt/workspace-pentaho/pentaho-open-admin-console/build-res/subfloor.xml" />
+
+          <property name="ant.home" value="/usr/local/apache-ant-1.8.4" />
+
+          <property name="ivy.resolved.file" value="/opt/workspace-pentaho/pentaho-open-admin-console/ivy.xml" />
+
+          <property name="ant.java.version" value="1.6" />
+
+          <property name="java.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="env.GIO_LAUNCHED_DESKTOP_FILE_PID" value="3045" />
+
+          <property name="ivy.resolved.configurations" value="test" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="basedir" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="java.vendor.url.ivy.instance" value="http://java.sun.com/" />
+
+          <property name="java.ext.dirs.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="ivy.version" value="2.2.0" />
+
+          <property name="env.PATH" value="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/ruby/bin:/opt/apache-maven-3.0.4/bin:/opt/play-2.0.2:/opt/play-2.0.2:/opt/apache-maven-3.0.4/bin:/home/andre/.rvm/bin" />
+
+          <property name="headless.unittest" value="true" />
+
+          <property name="ivy.artifact.ivyfilename" value="ivy.xml" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="release.major.number" value="2" />
+
+          <property name="ivy.resolver.default.check.modified.ivy.instance" value="false" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ivy.conf.dir" value="file:/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="ivy.artifact.ivypathname" value="/opt/workspace-pentaho/pentaho-open-admin-console/dist/ivy.xml" />
+
+          <property name="gwt.output.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/gwt/output" />
+
+          <property name="user.language" value="en" />
+
+          <property name="testclasses.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/classes" />
+
+          <property name="stage.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/stage" />
+
+          <property name="ant.file.type.subfloor-gwt" value="file" />
+
+          <property name="java.vm.specification.vendor.ivy.instance" value="Sun Microsystems Inc." />
+
+          <property name="gwt-compile.maxstack" value="1024k" />
+
+          <property name="ant.project.invoked-targets" value="default" />
+
+          <property name="env.LC_MESSAGES" value="en_US.UTF-8" />
+
+          <property name="tattletale.url" value="http://repo.pentaho.org/artifactory/repo/jboss/tattletale/1.1.2.Final/tattletale-1.1.2.Final.zip" />
+
+          <property name="subfloor.tmp.dir" value="/home/andre/.subfloor/tmp" />
+
+          <property name="ivy.report.output.pattern" value="[organisation]-[module]-[conf].[ext]" />
+
+          <property name="java.class.version" value="50.0" />
+
+          <property name="sun.boot.library.path.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64" />
+
+          <property name="os.version.ivy.instance" value="3.2.0-32-generic" />
+
+          <property name="env.ORBIT_SOCKETDIR" value="/tmp/orbit-andre" />
+
+          <property name="package.resdir" value="/opt/workspace-pentaho/pentaho-open-admin-console/package-res" />
+
+          <property name="sun.desktop.ivy.instance" value="gnome" />
+
+          <property name="javadoc.zip.filename" value="pentaho-open-admin-console-4.5-SNAPSHOT-javadoc.zip" />
+
+          <property name="ivy.project.dir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-ubuntu-2d:/etc/xdg" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="env.LC_COLLATE" value="en_US.UTF-8" />
+
+          <property name="tattletale.classname" value="org.jboss.tattletale.ant.ReportTask" />
+
+          <property name="ivy.configurations.ivy.instance" value="*" />
+
+          <property name="ivy.home.ivy.instance" value="/home/andre/.ivy2" />
+
+          <property name="env.SHELL" value="/bin/bash" />
+
+          <property name="ivy.artifact.group" value="pentaho" />
+
+          <property name="coberturareports.html.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/cobertura/html" />
+
+          <property name="gwt.common.build.file" value="./build-res/subfloor-gwt.xml" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre" />
+
+          <property name="testreports.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test" />
+
+          <property name="ant.project.default-target" value="default" />
+
+          <property name="ivy.cache.resolution" value="/home/andre/.ivy2/resol-cache${env.EXECUTOR_NUMBER}" />
+
+          <property name="env.DESKTOP_SESSION" value="ubuntu-2d" />
+
+          <property name="ivy.status.ivy.instance" value="integration" />
+
+          <property name="ant.library.dir.ivy.instance" value="/usr/local/apache-ant-1.8.4/lib" />
+
+          <property name="sun.java.launcher.ivy.instance" value="SUN_STANDARD" />
+
+          <property name="antcontrib.available" value="true" />
+
+          <property name="svnant.use-svnkit" value="true" />
+
+          <property name="ivy.basedir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="junit.maxmemory" value="256M" />
+
+          <property name="java.vm.vendor.ivy.instance" value="Sun Microsystems Inc." />
+
+          <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-aOPmF2tyuE,guid=c9747b52a40866b7640269d900000043" />
+
+          <property name="ivy.cache.ttl.default.ivy.instance" value="10s" />
+
+          <property name="ivy.default.conf.dir.ivy.instance" value="jar:file:/home/andre/.subfloor/ivy/ivy.jar!/org/apache/ivy/core/settings" />
+
+          <property name="subfloor-pkg.file" value="subfloor-pkg.xml" />
+
+          <property name="env.XDG_SESSION_COOKIE" value="39e7f2394558fba2e966dad800000009-1351774642.155730-73881512" />
+
+          <property name="ivy.settings.url.ivy.instance" value="file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml" />
+
+          <property name="env.SSH_AUTH_SOCK" value="/tmp/keyring-bHgRGj/ssh" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="ivy.local.default.ivy.pattern" value="[organisation]/[module]/[revision]/[type]s/[artifact].[ext]" />
+
+          <property name="env.DISPLAY" value=":0" />
+
+          <property name="javac.deprecation" value="true" />
+
+          <property name="ant.file" value="/opt/workspace-pentaho/pentaho-open-admin-console/build.xml" />
+
+          <property name="testbin.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test" />
+
+          <property name="ivy.buildlist.ivyfilepath.ivy.instance" value="ivy.xml" />
+
+          <property name="javadoc.packagenames" value="org.pentaho.* " />
+
+          <property name="user.country.ivy.instance" value="US" />
+
+          <property name="testsrc.dir" value="test" />
+
+          <property name="ivy.reports.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/ivy" />
+
+          <property name="ivy.local.default.artifact.pattern" value="[organisation]/[module]/[revision]/[type]s/[artifact]-[revision].[ext]" />
+
+          <property name="dist.manifest.file" value="/opt/workspace-pentaho/pentaho-open-admin-console/dist/MANIFEST.MF" />
+
+          <property name="env.PLAY_HOME" value="/opt/play-2.0.2" />
+
+          <property name="ivy.default.always.check.exact.revision.ivy.instance" value="false" />
+
+          <property name="cobertura.data.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/cobertura-bin" />
+
+          <property name="sun.cpu.isalist.ivy.instance" value="" />
+
+          <property name="testreports.xml.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test/xml" />
+
+          <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="package.artifact.pomfile" value="package-pom.xml" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="file.encoding.ivy.instance" value="UTF-8" />
+
+          <property name="java.vendor.url" value="http://java.sun.com/" />
+
+          <property name="env.MANDATORY_PATH" value="/usr/share/gconf/ubuntu-2d.mandatory.path" />
+
+          <property name="ant.file.type.subfloor-pkg" value="file" />
+
+          <property name="ivy.cache.ttl.default" value="10s" />
+
+          <property name="env.M3_HOME" value="/opt/apache-maven-3.0.4" />
+
+          <property name="env.XDG_CURRENT_DESKTOP" value="Unity" />
+
+          <property name="ivy.settings.file.ivy.instance" value="ivysettings.xml" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64" />
+
+          <property name="ivy.cache.resolution.ivy.instance" value="/home/andre/.ivy2/resol-cache${env.EXECUTOR_NUMBER}" />
+
+          <property name="env.MAVEN_HOME" value="/opt/apache-maven-3.0.4" />
+
+          <property name="file.encoding.pkg.ivy.instance" value="sun.io" />
+
+          <property name="tattletale.reports.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/tattletale" />
+
+          <property name="ivy.local.default.root" value="/home/andre/.ivy2/local" />
+
+          <property name="ivy.resolver.default.check.modified" value="false" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="ant.project.name" value="Pentaho Open Admin Console" />
+
+          <property name="ivy.local.default.root.ivy.instance" value="/home/andre/.ivy2/local" />
+
+          <property name="sun.management.compiler.ivy.instance" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="java.vendor.url.bug.ivy.instance" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+
+          <property name="res.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/resource/hibernate" />
+
+          <property name="ivy.conf.dir.ivy.instance" value="file:/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="env.LESSCLOSE" value="/usr/bin/lesspipe %s %s" />
+
+          <property name="ant.file.type.Pentaho Open Admin Console" value="file" />
+
+          <property name="ivy.buildlist.ivyfilepath" value="ivy.xml" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="coberturareports.xml.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/cobertura/xml" />
+
+          <property name="impl.vendor" value="Your Company Here" />
+
+          <property name="env.SSH_AGENT_PID" value="1888" />
+
+          <property name="ivy.default.ivy.user.dir" value="/home/andre/.ivy2" />
+
+          <property name="java.runtime.version.ivy.instance" value="1.6.0_26-b03" />
+
+          <property name="project.revision" value="4.5-SNAPSHOT" />
+
+          <property name="user.home" value="/home/andre" />
+
+          <property name="env.JAVA_HOME" value="/usr/lib/jvm/java-6-sun-1.6.0.26" />
+
+          <property name="java.vm.version.ivy.instance" value="20.1-b02" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="ivy.dep.file" value="ivy.xml" />
+
+          <property name="release.milestone.number" value="0" />
+
+          <property name="package.artifact.ivyfile" value="package-ivy.xml" />
+
+          <property name="user.timezone.ivy.instance" value="America/Sao_Paulo" />
+
+          <property name="env.XAUTHORITY" value="/home/andre/.Xauthority" />
+
+          <property name="ivy.deliver.ivy.pattern.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="ivy.conf.url" value="file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml" />
+
+          <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+
+          <property name="ivy.deps.changed" value="false" />
+
+          <property name="java.version" value="1.6.0_26" />
+
+          <property name="sonar.url" value="http://repo1.maven.org/maven2/org/codehaus/sonar-plugins/sonar-ant-task/1.2/sonar-ant-task-1.2.jar" />
+
+          <property name="sun.jnu.encoding.ivy.instance" value="UTF-8" />
+
+          <property name="sun.io.unicode.encoding.ivy.instance" value="UnicodeLittle" />
+
+          <property name="testreports.html.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/reports/test/html" />
+
+          <property name="env._" value="/usr/bin/ant" />
+
+          <property name="env.SESSION_MANAGER" value="local/Mestre-Linux:@/tmp/.ICE-unix/1850,unix/Mestre-Linux:/tmp/.ICE-unix/1850" />
+
+          <property name="env.LD_LIBRARY_PATH" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/../lib/amd64" />
+
+          <property name="sun.java.command.ivy.instance" value="org.apache.tools.ant.launch.Launcher -cp " />
+
+          <property name="package.id" value="pentaho-open-admin-console-package" />
+
+          <property name="package.root.dir" value="administration-console" />
+
+          <property name="basedir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="ivy.conf.url.ivy.instance" value="file:/opt/workspace-pentaho/pentaho-open-admin-console/ivysettings.xml" />
+
+          <property name="gwt-compile.maxmemory" value="512M" />
+
+          <property name="java.specification.vendor.ivy.instance" value="Sun Microsystems Inc." />
+
+          <property name="env.LESSOPEN" value="| /usr/bin/lesspipe %s" />
+
+          <property name="ivy.build.artifacts.dir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/build/artifacts" />
+
+          <property name="ivy.cache.dir" value="/home/andre/.ivy2/cache" />
+
+          <property name="classes.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/classes" />
+
+          <property name="user.language.ivy.instance" value="en" />
+
+          <property name="java.class.path.ivy.instance" value="/usr/local/apache-ant-1.8.4/lib/ant-launcher.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-oro.jar:/usr/local/apache-ant-1.8.4/lib/ant-launcher.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit4.jar:/usr/local/apache-ant-1.8.4/lib/ant-commons-net.jar:/usr/local/apache-ant-1.8.4/lib/ant-commons-logging.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit.jar:/usr/local/apache-ant-1.8.4/lib/ant-jdepend.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-bsf.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-xalan2.jar:/usr/local/apache-ant-1.8.4/lib/ant-swing.jar:/usr/local/apache-ant-1.8.4/lib/ant-jai.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-log4j.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-regexp.jar:/usr/local/apache-ant-1.8.4/lib/ant-testutil.jar:/usr/local/apache-ant-1.8.4/lib/ant-jmf.jar:/usr/local/apache-ant-1.8.4/lib/ant-javamail.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-bcel.jar:/usr/local/apache-ant-1.8.4/lib/ant-antlr.jar:/usr/local/apache-ant-1.8.4/lib/ant-jsch.jar:/usr/local/apache-ant-1.8.4/lib/ant-netrexx.jar:/usr/local/apache-ant-1.8.4/lib/ant.jar:/usr/local/apache-ant-1.8.4/lib/ant-apache-resolver.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/lib/tools.jar" />
+
+          <property name="source.tar.filename" value="pentaho-open-admin-console-4.5-SNAPSHOT-sources.tar.gz" />
+
+          <property name="javac.source" value="1.5" />
+
+          <property name="env.PWD" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="sun.cpu.endian.ivy.instance" value="little" />
+
+          <property name="line.separator" value=" " />
+
+          <property name="java.specification.version" value="1.6" />
+
+          <property name="ivy.publish.src.artifacts.pattern" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ivy.isinstalled" value="true" />
+
+          <property name="ivy.retrieve.pattern" value="/opt/workspace-pentaho/pentaho-open-admin-console/lib/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="ivy.organisation" value="pentaho" />
+
+          <property name="ivy.targets.copied" value="true" />
+
+          <property name="release.candidate.token" value="RC2" />
+
+          <property name="env.GIO_LAUNCHED_DESKTOP_FILE" value="/usr/share/applications/terminator.desktop" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/classes" />
+
+          <property name="javac.target" value="1.5" />
+
+          <property name="bin.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin" />
+
+          <property name="ivy.resolve.default.type.filter" value="*" />
+
+          <property name="java.specification.version.ivy.instance" value="1.6" />
+
+          <property name="license.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="src.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/src" />
+
+          <property name="ivy.basedir" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="ivy.log.modules.in.use.ivy.instance" value="false" />
+
+          <property name="os.classifier" value="linux" />
+
+          <property name="ant.file.subfloor-gwt" value="/opt/workspace-pentaho/pentaho-open-admin-console/build-res/subfloor-gwt.xml" />
+
+          <property name="java.specification.name.ivy.instance" value="Java Platform API Specification" />
+
+          <property name="env.HOME" value="/home/andre" />
+
+          <property name="line.separator.ivy.instance" value=" " />
+
+          <property name="user.home.ivy.instance" value="/home/andre" />
+
+          <property name="ivy.publish.src.artifacts.pattern.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="instrumented.classes.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/instrumented-classes" />
+
+          <property name="ivy.deliver.ivy.pattern" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib/[type]s/[artifact]-[revision](-[classifier]).[ext]" />
+
+          <property name="ant.file.Pentaho Open Admin Console" value="/opt/workspace-pentaho/pentaho-open-admin-console/build.xml" />
+
+          <property name="dist.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/dist" />
+
+          <property name="dependency.pentaho-gwt-widgets.revision" value="3.2.5" />
+
+          <property name="resolve-init.skip" value="" />
+
+          <property name="ivy.checksums.ivy.instance" value="sha1,md5" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="testlib.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/test-lib" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="ivy.default.ivy.user.dir.ivy.instance" value="/home/andre/.ivy2" />
+
+          <property name="ivy.project.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="ivy.revision" value="4.5-SNAPSHOT" />
+
+          <property name="java.runtime.version" value="1.6.0_26-b03" />
+
+          <property name="sonar.classname" value="org.sonar.ant.SonarTask" />
+
+          <property name="ivy.artifact.pomfile" value="/opt/workspace-pentaho/pentaho-open-admin-console/dist/pom.xml" />
+
+          <property name="ivy.home" value="/home/andre/.ivy2" />
+
+          <property name="sun.boot.class.path.ivy.instance" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/resources.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/rt.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jsse.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/jce.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/charsets.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/modules/jdk.boot.jar:/usr/lib/jvm/java-6-sun-1.6.0.26/jre/classes" />
+
+          <property name="java.vendor.ivy.instance" value="Sun Microsystems Inc." />
+
+          <property name="env.COLORTERM" value="gnome-terminal" />
+
+          <property name="ivy.distrib.dir.ivy.instance" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="java.vm.specification.name.ivy.instance" value="Java Virtual Machine Specification" />
+
+          <property name="ivy.dep.file.ivy.instance" value="ivy.xml" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-6-sun-1.6.0.26/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="javac.maxmemory" value="256M" />
+
+          <property name="ivy.url" value="http://repo2.maven.org/maven2/org/apache/ivy/ivy/2.2.0/ivy-2.2.0.jar" />
+
+          <property name="java.class.path" value="/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/instrumented-classes:/opt/workspace-pentaho/pentaho-open-admin-console/bin/classes:/opt/workspace-pentaho/pentaho-open-admin-console/bin/test/classes:/opt/workspace-pentaho/pentaho-open-admin-console/lib/antlr-2.7.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-1.5.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-2.2.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-attrs-1.5.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/asm-attrs-2.2.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/avalon-framework-4.1.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/cglib-2.1_3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-beanutils-1.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-codec-1.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-collections-3.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-httpclient-3.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-io-1.4.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-lang-2.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/commons-logging-1.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/dom4j-1.6.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/ehcache-core-2.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/ejb3-persistence-1.0.1.GA.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/groovy-all-1.5.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-datepicker-r30.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-dev-2.0.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-dnd-3.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-incubator-2.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-servlet-2.0.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-user-2.0.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/gwt-widgets-0.2.0.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hibernate-3.2.6.ga.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hibernate-annotations-3.3.1.GA.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hibernate-commons-annotations-3.0.0.ga.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/hsqldb-1.8.0.7.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/javassist-3.4.ga.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jaxen-1.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-6.1.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-gwt-6.1.9.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-plus-6.1.2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jetty-util-6.1.9.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/jta-1.0.1B.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/log4j-1.2.14.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/logkit-1.0.1.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/mysql-connector-java-5.1.17.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-actionsequence-dom-TRUNK-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-api-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-engine-core-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-engine-security-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-engine-services-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-repository-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-security-userroledao-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-bi-platform-util-4.5-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-connections-TRUNK-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-gwt-widgets-3.2.5-sources.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-gwt-widgets-3.2.5.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/pentaho-xul-core-3.3-SNAPSHOT.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/servlet-api-2.3.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/servlet-api-2.5.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/slf4j-api-1.5.8.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/slf4j-log4j12-1.5.8.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/spring-2.5.6.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/spring-security-core-2.0.5.RELEASE.jar:/opt/workspace-pentaho/pentaho-open-admin-console/lib/xml-apis-1.0.b2.jar:/opt/workspace-pentaho/pentaho-open-admin-console/test-lib/junit-4.4.jar:/home/andre/.subfloor/cobertura/ant-launcher-__-1.7.0.jar:/home/andre/.subfloor/cobertura/asm-__-3.0.jar:/home/andre/.subfloor/cobertura/asm-tree-__-3.0.jar:/home/andre/.subfloor/cobertura/cobertura-__-1.9.4.1.jar:/home/andre/.subfloor/cobertura/log4j-__-1.2.9.jar:/home/andre/.subfloor/cobertura/oro-__-2.0.8.jar:/usr/local/apache-ant-1.8.4/lib/ant-launcher.jar:/usr/local/apache-ant-1.8.4/lib/ant.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit.jar:/usr/local/apache-ant-1.8.4/lib/ant-junit4.jar" />
+
+          <property name="antcontrib.build.cache.dir" value="/home/andre/.subfloor/ant-contrib" />
+
+          <property name="ivy.settings.dir" value="file:/opt/workspace-pentaho/pentaho-open-admin-console" />
+
+          <property name="gwt-log-level" value="INFO" />
+
+          <property name="os.version" value="3.2.0-32-generic" />
+
+          <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
+
+          <property name="sun.desktop" value="gnome" />
+
+          <property name="env.WINDOWID" value="69206020" />
+
+          <property name="java.class.version.ivy.instance" value="50.0" />
+
+          <property name="ivy.module" value="pentaho-open-admin-console" />
+
+          <property name="os.arch.ivy.instance" value="amd64" />
+
+          <property name="env.LANG" value="en_US.UTF-8" />
+
+          <property name="java.vm.name.ivy.instance" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="ivy.nb.targets.copied" value="1" />
+
+          <property name="pentaho-copyright" value="This program is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License, version 2.1 as published by the Free Software  Foundation.  You should have received a copy of the GNU Lesser General Public License along with this  program; if not, you can obtain a copy at http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html  or from the Free Software Foundation, Inc.,  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.  Copyright 2011 Pentaho Corporation.  All rights reserved. " />
+
+          <property name="package.basename" value="pentaho-open-admin-console-package-4.5-SNAPSHOT" />
+
+          <property name="subfloor.file" value="./subfloor.xml" />
+
+          <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+
+          <property name="ivy.log.modules.in.use" value="false" />
+
+          <property name="impl.title" value="Pentaho Administration Console" />
+
+          <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="ivy.build.artifacts.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/build/artifacts" />
+
+          <property name="subfloor.resources.dir" value="/home/andre/.subfloor" />
+
+          <property name="ivy.checksums" value="sha1,md5" />
+
+          <property name="sun.os.patch.level.ivy.instance" value="unknown" />
+
+          <property name="ivy.configurations" value="*" />
+
+          <property name="ivy.distrib.dir" value="/opt/workspace-pentaho/pentaho-open-admin-console/distrib" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.4 compiled on May 22 2012" />
+
+          <property name="release.minor.number" value="0" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="gwt-compile.localWorkers" value="4" />
+
+          <property name="user.name.ivy.instance" value="andre" />
+
+          <property name="impl.productID" value="POAC" />
+
+      </properties>
+
+      <testcase classname="org.pentaho.pac.server.common.AppConfigPropertiesTest" name="testGetInstance" time="0.076" />
+
+      <testcase classname="org.pentaho.pac.server.common.AppConfigPropertiesTest" name="testGetX" time="0.09" />
+
+      <system-out><![CDATA[WARN   getConsoleConfig, AppConfigProperties.ERROR_0004 - Unable to read file: console.xml
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>

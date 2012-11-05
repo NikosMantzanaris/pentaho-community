@@ -1,0 +1,362 @@
+<project name="bi-platform-dev" basedir="." default="help">
+
+  <description>
+-------------------------------------------------------------------------------
+Development build script for Pentaho BI Server CE.
+      
+MAIN TARGETS
+============
+    
+  * dev-rebuild: Prepares a clean Tomcat instance with all Pentaho BI Platform 
+    dependencies (i.e. JDBC JAR, datasources, supporting WARs, etc), also known
+    as a Pentaho-ready Tomcat. This must be called at least once before any 
+    call to dev-update.
+    
+  * dev-update:    
+    Copy changed artifacts into Tomcat instance.
+   
+PREREQUISITES
+=============
+        
+  * Checkout bi-platform-* and mantle projects from 
+    svn://source.pentaho.org/svnroot/bi-platform-v2/trunk.
+  * Download and unzip Apache Tomcat 6.X or greater.
+
+INSTRUCTIONS
+============
+
+  * Create dev_override.properties in the bi-platform-build directory.
+  * Add the property tomcat.dir and make the value the absolute path to your 
+    unzipped Tomcat installation.
+  * Run ant -f dev_build.xml dev-rebuild in the bi-platform-build directory.
+  * Eclipse: Create a new server using the Server view. Be sure to set Eclipse 
+    to "takeover Tomcat installation." Add source paths and any additional
+    arguments to server launch configuration. Optionally configure 
+    start-hypersonic and stop-hypersonic scripts under External Tools. Start
+    HSQLDB and then start the server.
+-------------------------------------------------------------------------------
+  </description>
+
+  <!-- This file inherits from the open assembly project -->
+  <property name="assembly.dir" location="../bi-platform-assembly" />
+
+  <property file="dev_override.properties" />
+  <property file="dev_build.properties" />
+  <property file="${assembly.dir}/override.properties" />
+  <property file="${assembly.dir}/assembly.properties" />
+
+  <!-- subfloor/assembly property overrides -->
+  <property name="ivyfile" value="${assembly.dir}/ivy.xml" />
+  <property name="ivy.settingsurl" value="file:${assembly.dir}/ivysettings.xml" />
+  <property name="stage.dir" value="../tomcat-pci-test" />
+  <property name="jre.dir" value="../dummy-jre" />
+  <property name="bi.platform.open.assembly.dir" location="../bi-platform-assembly" />
+  <property name="classes.dir" value="${prep.pentaho.war.classes.dir}" />
+
+  <!--Import Open Assembly ant file -->
+  <import file="${assembly.dir}/assembly.xml" />
+
+  <!-- custom dev_build properties -->
+  <property name="source-solution" value="../bi-platform-sample-solution" />
+  <property name="suppress-svn-validation" value="true" />
+  <property name="tomcat.lib.dir" value="${tomcat.dir}/lib" />
+
+  <!-- These are the projects that will be compiled to class files and placed in WEB-INF/classes -->
+  <property name="dev-project.list"
+            value="bi-platform-api, 
+    				bi-platform-util,
+			  		bi-platform-engine-core,
+			  		bi-platform-test-foundation,
+			  		bi-platform-engine-security,
+			  		bi-platform-engine-services,
+			  		bi-platform-repository,
+			  		bi-platform-ui-foundation,
+			  		bi-platform-plugin-services,
+			  		bi-platform-plugin-actions,
+			  		bi-platform-scheduler,
+			  		bi-platform-legacy,
+			  		bi-platform-web,
+			  		bi-platform-web-servlet,
+			  		bi-platform-web-portlet,
+			  		bi-platform-security-userroledao" />
+
+
+
+  <path id="classpath">
+    <!-- classes dir is both a destination for .class files and a source for dependencies -->
+    <pathelement location="${prep.pentaho.war.classes.dir}" />
+    <!-- WEB-INF/lib contains non-bi-platform-* dependencies (populated by dev_rebuild) -->
+    <fileset dir="${prep.pentaho.war.lib.dir}">
+      <include name="*.jar" />
+    </fileset>
+    <!-- need this for servlet.jar -->
+    <fileset dir="${tomcat.lib.dir}">
+      <include name="*.jar" />
+    </fileset>
+    <!-- need this for jdbc drivers -->
+    <fileset dir="${container.lib.dir}">
+      <include name="*.jar" />
+    </fileset>
+  </path>
+
+  <!-- - - - - - - - - - - - - - - - - - 
+          target: install-xmltask  Automatically installs xmltask. 
+          No need to call this target explicitly                     
+         - - - - - - - - - - - - - - - - - -->
+  <target name="install-xmltask" depends="install-ivy, install-antcontrib">
+    <if>
+      <istrue value="${xmltask.isinstalled}" />
+      <else>
+        <taskdef-with-ivy task-name="xmltask"
+                          organisation="oopsconsultancy"
+                          module="xmltask"
+                          revision="1.16"
+                          classname="com.oopsconsultancy.xmltask.ant.XmlTask" />
+        <property name="xmltask.isinstalled" value="true" />
+      </else>
+    </if>
+  </target>
+
+  <!-- ================================= 
+          target: dev-rebuild              
+         ================================= -->
+  <target name="dev-rebuild"
+          description="Creates a Pentaho-ready Tomcat instance."
+          depends="prep-dev-biserver,dev-update" />
+
+  <!-- - - - - - - - - - - - - - - - - - 
+          target: prep-dev-tomcat                      
+         - - - - - - - - - - - - - - - - - -->
+  <target name="prep-dev-biserver" depends="install-xmltask,clean-all,resolve,fake-jre,assemble">
+    <!-- Remove pentaho-bi-platform-*.jar since we want to use classes instead. -->
+    <delete>
+      <fileset dir="${prep.pentaho.war.lib.dir}">
+        <include name="pentaho-bi-platform-*.jar" />
+      </fileset>
+    </delete>
+
+    <!-- make the webapp reloadable (Tomcat will monitor classes for changes) -->
+    <xmltask source="${prep.pentaho.war.meta.dir}/context.xml" dest="${prep.pentaho.war.meta.dir}/context.xml">
+      <attr path="/Context" attr="reloadable" value="true" />
+    </xmltask>
+    <!-- check context.xml for well-formedness -->
+    <xmlvalidate file="${prep.pentaho.war.meta.dir}/context.xml" failonerror="yes" lenient="yes" warn="yes" />
+  </target>
+
+  <!-- - - - - - - - - - - - - - - - - - 
+          target: fake-jre                      
+         - - - - - - - - - - - - - - - - - -->
+  <target name="fake-jre">
+    <mkdir dir="${jre.dir}" />
+  </target>
+
+  <!-- - - - - - - - - - - - - - - - - - 
+          target: dev-update                      
+         - - - - - - - - - - - - - - - - - -->
+  <target name="dev-update" depends="install-antcontrib">
+    <for list="${dev-project.list}" param="module" trim="true">
+      <sequential>
+        <ant antfile="build.xml" dir="../@{module}" inheritall="false" target="compile">
+          <property name="classes.dir" value="${prep.pentaho.war.classes.dir}" />
+          <reference refid="classpath" />
+        </ant>
+      </sequential>
+    </for>
+    <antcall target="copy-solution" />
+  </target>
+
+
+  <target name="help" description="Displays help information.">
+    <echo level="info">Run 'ant -f dev_build.xml -projecthelp' for more information.</echo>
+  </target>
+
+  <target name="copy-solution" description="Copies Pentaho solution files.">
+    <copy todir="${solution.dir.server}">
+      <fileset dir="${source-solution}" />
+    </copy>
+  </target>
+
+  <target name="xresolve"
+          description="Performs the resolve task on all the platform projects"
+          depends="subfloor.resolve">
+    <ant antfile="build.xml" dir="../bi-platform-api" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-util" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-core" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-security" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-services" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-repository" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-ui-foundation" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-plugin-services" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-plugin-actions" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-scheduler" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-legacy" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-web" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-web-servlet" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-web-portlet" target="resolve" />
+    <ant antfile="build.xml" dir="../bi-platform-security-userroledao" target="resolve" />
+    <ant antfile="build.xml" dir="../mantle" target="resolve" />
+  </target>
+
+  <target name="xclean-all"
+          description="Performs the clean-all task on all the platform projects"
+          depends="subfloor.clean-all">
+    <ant antfile="build.xml" dir="../bi-platform-api" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-util" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-core" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-security" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-services" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-repository" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-ui-foundation" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-plugin-services" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-plugin-actions" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-scheduler" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-legacy" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-web" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-web-servlet" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-web-portlet" target="clean-all" />
+    <ant antfile="build.xml" dir="../bi-platform-security-userroledao" target="clean-all" />
+    <ant antfile="build.xml" dir="../mantle" target="clean-all" />
+  </target>
+
+  <target name="xclean-dist" description="Performs the clean-dist task on all the platform projects">
+    <ant antfile="build.xml" dir="../bi-platform-api" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-util" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-core" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-security" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-services" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-repository" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-ui-foundation" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-plugin-services" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-plugin-actions" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-scheduler" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-legacy" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-web" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-web-servlet" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-web-portlet" target="clean-dist" />
+    <ant antfile="build.xml" dir="../bi-platform-security-userroledao" target="clean-dist" />
+    <ant antfile="build.xml" dir="../mantle" target="clean-dist" />
+  </target>
+
+  <target name="xcompile" description="Performs the compile task on all the platform projects">
+    <ant antfile="build.xml" dir="../bi-platform-api" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-util" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-core" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-security" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-services" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-repository" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-ui-foundation" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-plugin-services" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-plugin-actions" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-scheduler" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-legacy" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-web" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-web-servlet" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-web-portlet" target="compile" />
+    <ant antfile="build.xml" dir="../bi-platform-security-userroledao" target="compile" />
+    <ant antfile="build.xml" dir="../mantle" target="compile" />
+  </target>
+
+  <target name="xdist" description="Performs the dist task on all the platform projects">
+    <ant antfile="build.xml" dir="../bi-platform-api" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-util" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-core" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-security" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-engine-services" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-repository" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-ui-foundation" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-plugin-services" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-plugin-actions" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-scheduler" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-legacy" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-web" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-web-servlet" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-web-portlet" target="dist" />
+    <ant antfile="build.xml" dir="../bi-platform-security-userroledao" target="dist" />
+    <ant antfile="build.xml" dir="../mantle" target="dist" />
+  </target>
+
+  <target name="resolve-publish-local-all" description="">
+    <delete dir="${user.home}/.ivy2/local/pentaho" />
+    <ant antfile="build.xml" dir="../bi-platform-api">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-util">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-engine-core">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-engine-security">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-engine-services">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-repository">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-ui-foundation">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-plugin-services">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-plugin-actions">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-scheduler">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-legacy">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-web">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-web-servlet">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-web-portlet">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../bi-platform-security-userroledao">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+    <ant antfile="build.xml" dir="../pentaho-open-admin-console">
+      <target name="clean-all" />
+      <target name="resolve" />
+      <target name="publish-local" />
+    </ant>
+  </target>
+
+</project>

@@ -1,0 +1,8 @@
+2012/10/31 24:00:37		1		org.pentaho.platform.web.portal.PentahoPortletSession	Joe	session_start				0.0
+2012/10/31 24:00:37		2		org.pentaho.platform.web.portal.PentahoPortletSession		session_start				0.0
+2012/10/31 24:00:41	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_start	c5cbee51-22fe-11e2-8f86-b3b4cf1a432d			0.0
+2012/10/31 24:00:41	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_failed	c5cbee51-22fe-11e2-8f86-b3b4cf1a432d	SolutionEngine.ERROR_0007 - Action sequence execution failed		0.0010000000474974513
+2012/10/31 24:00:41	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_start	c5d31a42-22fe-11e2-8f86-b3b4cf1a432d			0.0
+2012/10/31 24:00:41	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_failed	c5d31a42-22fe-11e2-8f86-b3b4cf1a432d	SolutionEngine.ERROR_0007 - Action sequence execution failed		0.0010000000474974513
+2012/10/31 24:00:41	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_start	c5d38f73-22fe-11e2-8f86-b3b4cf1a432d			0.0
+2012/10/31 24:00:41	Global startup actions	system session	global-department-list.xaction	org.pentaho.platform.engine.services.solution.SolutionEngine	system session	instance_failed	c5d38f73-22fe-11e2-8f86-b3b4cf1a432d	SolutionEngine.ERROR_0007 - Action sequence execution failed		0.0

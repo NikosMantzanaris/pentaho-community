@@ -1,0 +1,24 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+ <SOAP-ENV:Body>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+ <SOAP-ENV:Body>
+<SOAP-ENV:Fault>
+<SOAP-ENV:faultcode>
+ <SOAP-ENV:Subcode>
+<SOAP-ENV:Value><![CDATA[SoapHelper.ERROR_0001 - Unknow error]]></SOAP-ENV:Value>
+ </SOAP-ENV:Subcode>
+ </SOAP-ENV:faultcode><SOAP-ENV:faultactor>SOAP-ENV:Server</SOAP-ENV:faultactor>
+<SOAP-ENV:faultstring><SOAP-ENV:Text xml:lang="en_US"><![CDATA[SoapHelper.ERROR_0001 - Unknow error]]></SOAP-ENV:Text>
+ </SOAP-ENV:faultstring>
+<SOAP-ENV:Detail></SOAP-ENV:Detail></SOAP-ENV:Fault>
+<SOAP-ENV:Fault>
+<SOAP-ENV:faultcode>
+ <SOAP-ENV:Subcode>
+<SOAP-ENV:Value><![CDATA[SoapHelper.ERROR_0001 - Unknow error]]></SOAP-ENV:Value>
+ </SOAP-ENV:Subcode>
+ </SOAP-ENV:faultcode><SOAP-ENV:faultactor>SOAP-ENV:Server</SOAP-ENV:faultactor>
+<SOAP-ENV:faultstring><SOAP-ENV:Text xml:lang="en_US"><![CDATA[SoapHelper.ERROR_0001 - Unknow error]]></SOAP-ENV:Text>
+ </SOAP-ENV:faultstring>
+<SOAP-ENV:Detail></SOAP-ENV:Detail></SOAP-ENV:Fault>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

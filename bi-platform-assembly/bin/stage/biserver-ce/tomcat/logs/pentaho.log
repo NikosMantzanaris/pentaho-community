@@ -1,0 +1,273 @@
+2012-11-05 11:42:16,116 ERROR [org.pentaho.platform.web.hsqldb.HsqlDatabaseStarterBean] HsqlDatabaseStarterBean.ERROR_0006 - The default port of 9001 is already in use. Do you already have HSQLDB running in another process? The HSQLDB Starter cannot continue.
+2012-11-05 11:42:16,116 WARN  [org.pentaho.platform.web.hsqldb.HsqlDatabaseStarterBean] Due to a previous error, no databases will be available.
+2012-11-05 11:42:16,130 ERROR [com.tonbeller.tbutils.res.JNDIResourceProvider] error closing context
+javax.naming.OperationNotSupportedException: Context is read only
+	at org.apache.naming.NamingContext.checkWritable(NamingContext.java:962)
+	at org.apache.naming.NamingContext.close(NamingContext.java:762)
+	at com.tonbeller.tbutils.res.JNDIResourceProvider.close(JNDIResourceProvider.java:68)
+	at com.tonbeller.tbutils.res.CompositeResourceProvider.close(CompositeResourceProvider.java:56)
+	at com.tonbeller.tbutils.res.ResourcesFactory.initialize(ResourcesFactory.java:163)
+	at com.tonbeller.tbutils.res.ResourcesFactory.<init>(ResourcesFactory.java:92)
+	at com.tonbeller.tbutils.res.ResourcesFactory.<clinit>(ResourcesFactory.java:89)
+	at com.tonbeller.tbutils.res.ResourcesFactoryContextListener.contextInitialized(ResourcesFactoryContextListener.java:23)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4791)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5285)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1105)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1664)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2012-11-05 11:42:20,446 WARN  [org.pentaho.reporting.libraries.base.boot.PackageManager] Unresolved dependency for package: org.pentaho.reporting.engine.classic.extensions.datasources.cda.CdaModule
+2012-11-05 11:42:20,466 WARN  [org.pentaho.reporting.libraries.base.boot.PackageSorter] A dependent module was not found in the list of known modules.
+2012-11-05 11:42:24,414 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2012-11-05 11:42:24,925 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2012-11-05 11:42:25,098 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2012-11-05 11:42:25,301 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2012-11-05 11:42:25,362 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2012-11-05 11:42:25,446 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+, TRIGGER_GROUP, JOB_NAME, JOB_GROUP, IS_VOLATILE, DESCRIPTION, NEXT_FIRE_TIME, PREV_FIRE_TIME, TRIGGER_STATE, TRIGGER_TYPE, START_TIME, END_TIME, CALENDAR_NAME, MISFIRE_INSTR, JOB_DATA)  VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:964)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggerFired(JobStoreSupport.java:1876)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.triggerFired(JobStoreTX.java:1286)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:308)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Integrity constraint violation - no parent SYS_FK_4 table: QRTZ_JOB_DETAILS in statement [INSERT INTO QRTZ_TRIGGERS (TRIGGER_NAME, TRIGGER_GROUP, JOB_NAME, JOB_GROUP, IS_VOLATILE, DESCRIPTION, NEXT_FIRE_TIME, PREV_FIRE_TIME, TRIGGER_STATE, TRIGGER_TYPE, START_TIME, END_TIME, CALENDAR_NAME, MISFIRE_INSTR, JOB_DATA)  VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+	at org.hsqldb.jdbc.Util.throwError(Unknown Source)
+	at org.hsqldb.jdbc.jdbcPreparedStatement.executeUpdate(Unknown Source)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:101)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.insertTrigger(StdJDBCDelegate.java:1187)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:952)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.triggerFired(JobStoreSupport.java:1876)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.triggerFired(JobStoreTX.java:1286)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:308)
+2012-11-05 11:42:24,428 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2012-11-05 11:42:24,928 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2012-11-05 11:42:25,079 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2012-11-05 11:42:25,243 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2012-11-05 11:42:25,308 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2012-11-05 11:42:25,391 WARN  [org.apache.axis2.description.AxisService] Unable to generate EPR for the transport : http
+2012-11-05 12:08:20,341 ERROR [org.hibernate.util.JDBCExceptionReporter] Connection is broken: java.io.EOFException
+2012-11-05 12:08:20,342 ERROR [org.pentaho.platform.repository.hibernate.HibernateUtil] HIBUTIL.ERROR_0004 - beginTransaction() failed.
+org.hibernate.exception.JDBCConnectionException: Cannot open connection
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:74)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:29)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:426)
+	at org.hibernate.jdbc.ConnectionManager.getConnection(ConnectionManager.java:144)
+	at org.hibernate.jdbc.JDBCContext.connection(JDBCContext.java:119)
+	at org.hibernate.transaction.JDBCTransaction.begin(JDBCTransaction.java:57)
+	at org.hibernate.impl.SessionImpl.beginTransaction(SessionImpl.java:1326)
+	at org.pentaho.platform.repository.hibernate.HibernateUtil.beginTransaction(HibernateUtil.java:428)
+	at org.pentaho.platform.repository.usersettings.UserSettingService.getUserSetting(UserSettingService.java:102)
+	at org.pentaho.platform.web.servlet.ThemeServlet.handleRequest(ThemeServlet.java:58)
+	at org.pentaho.platform.web.servlet.ThemeServlet.doGet(ThemeServlet.java:43)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:722)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.pentaho.platform.web.http.filters.PentahoWebContextFilter.doFilter(PentahoWebContextFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.pentaho.platform.web.http.filters.PentahoRequestContextFilter.doFilter(PentahoRequestContextFilter.java:84)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:378)
+	at org.springframework.security.intercept.web.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:109)
+	at org.springframework.security.intercept.web.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.ExceptionTranslationFilter.doFilterHttp(ExceptionTranslationFilter.java:101)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.pentaho.platform.web.http.security.SecurityStartupFilter.doFilter(SecurityStartupFilter.java:108)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.providers.anonymous.AnonymousProcessingFilter.doFilterHttp(AnonymousProcessingFilter.java:105)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.pentaho.platform.web.http.security.RequestParameterAuthenticationFilter.doFilter(RequestParameterAuthenticationFilter.java:169)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.basicauth.BasicProcessingFilter.doFilterHttp(BasicProcessingFilter.java:174)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.AbstractProcessingFilter.doFilterHttp(AbstractProcessingFilter.java:278)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.ui.logout.LogoutFilter.doFilterHttp(LogoutFilter.java:89)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.pentaho.platform.web.http.security.HttpSessionReuseDetectionFilter.doFilter(HttpSessionReuseDetectionFilter.java:134)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.context.HttpSessionContextIntegrationFilter.doFilterHttp(HttpSessionContextIntegrationFilter.java:235)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.wrapper.SecurityContextHolderAwareRequestFilter.doFilterHttp(SecurityContextHolderAwareRequestFilter.java:91)
+	at org.springframework.security.ui.SpringSecurityFilter.doFilter(SpringSecurityFilter.java:53)
+	at org.springframework.security.util.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:390)
+	at org.springframework.security.util.FilterChainProxy.doFilter(FilterChainProxy.java:175)
+	at org.springframework.security.util.FilterToBeanProxy.doFilter(FilterToBeanProxy.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.pentaho.platform.web.http.filters.SystemStatusFilter.doFilter(SystemStatusFilter.java:60)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.pentaho.platform.web.http.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:168)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:929)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1002)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:585)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: java.sql.SQLException: Connection is broken: java.io.EOFException
+	at org.hsqldb.jdbc.Util.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.jdbcConnection.getAutoCommit(Unknown Source)
+	at org.hibernate.connection.DriverManagerConnectionProvider.getConnection(DriverManagerConnectionProvider.java:104)
+	at org.hibernate.jdbc.ConnectionManager.openConnection(ConnectionManager.java:423)
+	... 73 more
+2012-11-05 12:08:23,373 ERROR [org.quartz.impl.jdbcjobstore.JobStoreTX] MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:575)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:111)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:553)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+2012-11-05 12:08:24,585 ERROR [org.quartz.core.ErrorLogger] An error occured while scanning for the next trigger to fire.
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:575)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.acquireNextTrigger(JobStoreTX.java:1211)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:233)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:111)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:553)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.acquireNextTrigger(JobStoreTX.java:1211)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:233)
+2012-11-05 12:08:27,600 ERROR [org.hibernate.util.JDBCExceptionReporter] socket creation error
+2012-11-05 12:08:27,600 ERROR [org.hibernate.util.JDBCExceptionReporter] socket creation error
+2012-11-05 12:08:27,610 ERROR [org.hibernate.util.JDBCExceptionReporter] socket creation error
+2012-11-05 12:08:27,610 ERROR [org.hibernate.util.JDBCExceptionReporter] socket creation error
+2012-11-05 12:08:28,423 ERROR [org.hibernate.util.JDBCExceptionReporter] socket creation error
+2012-11-05 12:08:28,423 ERROR [org.hibernate.util.JDBCExceptionReporter] socket creation error
+2012-11-05 12:08:28,434 ERROR [org.hibernate.util.JDBCExceptionReporter] socket creation error
+2012-11-05 12:08:28,434 ERROR [org.hibernate.util.JDBCExceptionReporter] socket creation error
+2012-11-05 12:12:23,370 ERROR [org.quartz.impl.jdbcjobstore.JobStoreTX] MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:575)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:111)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:553)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+2012-11-05 12:16:23,371 ERROR [org.quartz.impl.jdbcjobstore.JobStoreTX] MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:575)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:111)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:553)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+2012-11-05 12:20:23,372 ERROR [org.quartz.impl.jdbcjobstore.JobStoreTX] MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:575)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:111)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:553)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+2012-11-05 12:24:23,372 ERROR [org.quartz.impl.jdbcjobstore.JobStoreTX] MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:575)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:111)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:553)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+2012-11-05 12:28:23,372 ERROR [org.quartz.impl.jdbcjobstore.JobStoreTX] MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:575)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:111)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:553)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+2012-11-05 12:32:23,373 ERROR [org.quartz.impl.jdbcjobstore.JobStoreTX] MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:575)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:111)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:553)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+2012-11-05 12:36:23,375 ERROR [org.quartz.impl.jdbcjobstore.JobStoreTX] MisfireHandler: Error handling misfires: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+org.quartz.JobPersistenceException: Failed to obtain DB connection from data source 'myDS': java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error [See nested exception: java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:575)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)
+* Nested Exception (Underlying Cause) ---------------
+java.sql.SQLException: Could not retrieve datasource via JNDI url 'java:comp/env/jdbc/Quartz' java.sql.SQLException: socket creation error
+	at org.quartz.utils.JNDIConnectionProvider.getConnection(JNDIConnectionProvider.java:166)
+	at org.quartz.utils.DBConnectionManager.getConnection(DBConnectionManager.java:111)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:553)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.doRecoverMisfires(JobStoreTX.java:1343)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:2449)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:2468)

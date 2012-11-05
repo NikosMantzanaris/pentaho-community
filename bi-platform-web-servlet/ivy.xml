@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="${ivy.artifact.group}" module="pentaho-bi-platform-web-servlet" revision="${project.revision}" />
+  <configurations>
+        <conf name="default" extends="default-ext"/>
+        <conf name="default-ext"/>
+    <conf name="test" visibility="private" />
+    <conf name="source" />
+  </configurations>
+  
+  <publications>
+    <artifact name="${ivy.artifact.id}" type="jar" conf="default"/>
+    <artifact name="${ivy.artifact.id}" m:classifier="sources" type="source" ext="jar" conf="source"/>
+  </publications>  
+  
+  <dependencies defaultconf="default-ext->default">
+        
+        <!--  external apache dependencies -->
+    <dependency org="commons-fileupload" name="commons-fileupload" rev="1.2.1" />
+    <dependency org="commons-io" name="commons-io" rev="1.4" />
+    <dependency org="commons-lang" name="commons-lang" rev="2.2" />
+    <dependency org="commons-logging" name="commons-logging" rev="1.1" transitive="false" />
+    <dependency org="commons-httpclient" name="commons-httpclient" rev="3.0.1" transitive="false" />
+    <dependency org="dom4j" name="dom4j" rev="1.6.1">
+      <exclude org="xml-apis" name="xml-apis" />
+    </dependency>
+    <dependency org="jfree" name="jcommon" rev="1.0.14" />
+    <dependency org="org.springframework.security"   name="spring-security-core"      rev="2.0.5.RELEASE" transitive="false"/>
+    <dependency org="org.springframework" name="spring" rev="2.5.6" transitive="false" />
+    <dependency org="javax.servlet" name="servlet-api" rev="2.4" />
+
+        <!-- reporting -->
+    <dependency org="pentaho" name="pentaho-report-wizard-core" rev="${dependency.pentaho-report-wizard-core.revision}"
+      changing="true" />
+    <dependency org="org.codehaus.castor" name="castor" rev="1.0.5" transitive="false" />
+
+        <!-- olap -->
+    <dependency org="pentaho" name="mondrian" rev="${dependency.mondrian.revision}" changing="true" >
+        <exclude org="commons-dbcp" name="commons-dbcp"/>
+        <exclude org="javax.servlet" name="jsp-api"/>
+        <exclude org="javax.servlet" name="servlet-api"/>
+    </dependency>    
+    
+    <dependency org="com.sun" name="jai_codec" rev="1.1.2" />
+    <dependency org="com.sun" name="jai_core" rev="1.1.2" />
+    <dependency org="javax.faces" name="jsf-api" rev="1.1" />
+    <dependency org="jakarta-taglibs" name="standard" rev="1.0.6" />
+    <dependency org="com.tonbeller" name="jpivot" rev="${dependency.jpivot.revision}">
+      <artifact name="jpivot" type="jar" />
+    </dependency>
+    <dependency org="com.tonbeller" name="tbutils-wcf" rev="1.8.0-070305" />
+    <dependency org="com.tonbeller" name="wcf" rev="${dependency.wcf.revision}" />
+    <dependency org="javax.servlet" name="jstl" rev="1.0.5" />
+    <dependency org="javatar" name="javatar" rev="2.5"  transitive="false"/>
+    
+    <dependency org="com.google.gwt" name="gwt-servlet" rev="2.0.3"/>
+    
+    <dependency org="pentaho-kettle" name="kettle-engine" rev="${dependency.kettle.revision}" />
+    <dependency org="pentaho-kettle" name="kettle-core"   rev="${dependency.kettle.revision}" />
+    
+    <dependency org="pentaho" name="pentaho-connections" rev="${dependency.pentaho-connections.revision}"
+      changing="true" />
+    <dependency org="pentaho" name="pentaho-metadata" rev="${dependency.pentaho-metadata.revision}" changing="true" />
+    <dependency org="pentaho" name="pentaho-actionsequence-dom" rev="${dependency.pentaho-actionsequence-dom.revision}"
+      changing="true" />
+      
+    <dependency org="${ivy.artifact.group}" name="pentaho-bi-platform-api" rev="${dependency.bi-platform.revision}" changing="true" conf="default->default"/>
+    <dependency org="${ivy.artifact.group}" name="pentaho-bi-platform-util" rev="${dependency.bi-platform.revision}" changing="true" conf="default->default"/>
+    <dependency org="${ivy.artifact.group}" name="pentaho-bi-platform-engine-core" rev="${dependency.bi-platform.revision}" changing="true" conf="default->default"/>
+    <dependency org="${ivy.artifact.group}" name="pentaho-bi-platform-engine-security" rev="${dependency.bi-platform.revision}" changing="true" conf="default->default"/>
+    <dependency org="${ivy.artifact.group}" name="pentaho-bi-platform-engine-services" rev="${dependency.bi-platform.revision}" changing="true" conf="default->default"/>
+    <dependency org="${ivy.artifact.group}" name="pentaho-bi-platform-repository" rev="${dependency.bi-platform.revision}" changing="true" conf="default->default"/>
+    <dependency org="${ivy.artifact.group}" name="pentaho-bi-platform-ui-foundation" rev="${dependency.bi-platform.revision}" changing="true" conf="default->default"/>
+    <dependency org="${ivy.artifact.group}" name="pentaho-bi-platform-web" rev="${dependency.bi-platform.revision}" changing="true" conf="default->default"/>
+    <dependency org="${ivy.artifact.group}" name="pentaho-bi-platform-plugin-actions" rev="${dependency.bi-platform.revision}" changing="true" conf="default->default"/>
+
+        <!--  testing dependencies -->
+    <dependency org="junit" name="junit" rev="4.4" conf="test->default" />
+    <dependency org="hsqldb"              name="hsqldb"              rev="1.8.0.7" conf="test->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-test-foundation" rev="${dependency.bi-platform.revision}" changing="true"
+      conf="test->default" transitive="false" />
+    <dependency org="com.mockrunner" name="mockrunner-servlet" rev="0.3.7" conf="test->default" />
+    <dependency org="org.springframework" name="spring-mock" rev="2.0.8" conf="test->default">
+      <!--
+        prevent Spring from grabbing these jars. We are already getting the versions we need in our default
+        configuration
+      -->
+      <exclude org="javax.servlet" name="servlet-api" />
+      <exclude org="avalon-framework" name="avalon-framework" />
+      <exclude org="log4j" name="log4j" />
+    </dependency>
+  </dependencies>
+</ivy-module>

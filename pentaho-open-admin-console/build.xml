@@ -1,0 +1,80 @@
+<!--===========================================================================
+  This is the build file for the Pentaho BI Platform Engine Core project.
+  
+  This build file will use the common_build.xml file as the default build
+  process and should only override the tasks that need to differ from
+  the common build file.
+  
+  See common_build.xml for more details
+============================================================================-->
+<project name="Pentaho Open Admin Console" basedir="." default="default" xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<!-- Define the default location of the common build file -->
+  <property name="gwt.common.build.file" value="./build-res/subfloor-gwt.xml" description="This is the location of the standardized gwt_common_build.xml file" />
+
+	<!-- Import the gwt_common_build.xml file which contains all the default tasks -->
+	<import file="${gwt.common.build.file}" />
+
+	<!--
+      AS STATED ABOVE, THE ONLY TASKS THAT SHOULD EXIST IN THIS BUILD FILE ARE
+      THE TASKS THAT NEED TO DIFFER FROM THE DEFAULT IMPLEMENTATION OF THE TASKS
+      FOUND IN common_build.xml.
+    -->
+
+  <target name="assemble" depends="gwt-compile,assemble.init,assemble.copy-libs">
+    <copy todir="${approot.stage.dir}" overwrite="true">
+      <fileset dir="${package.resdir}" />
+    </copy>
+    <chmod perm="a+x" dir="${stage.dir}" includes="**/*.sh" />
+	</target>
+
+  <target name="assemble.copy-libs">
+    <copy todir="${approot.stage.dir}/lib">
+      <fileset dir="${lib.dir}">
+				<!-- temporary fix to exclude jar slipping through the cracks and making it this far that shouldn't -->
+				<exclude name="**/gwt-user*.jar" />
+				<exclude name="**/gwt-dev*.jar" />
+				<exclude name="**/hsqldb*.jar" />
+				<exclude name="**/mysql*.jar" />
+      			<exclude name="**/hive*.jar" />
+      </fileset>
+      <fileset file="${dist.dir}/${ivy.artifact.id}*.jar" />
+    </copy>
+    <copy todir="${approot.stage.dir}/jdbc">
+      <fileset dir="${lib.dir}">
+				<include name="hsqldb*.jar"/>
+				<include name="mysql*.jar"/>
+      			<include name="hive*.jar"/>
+      </fileset>
+    </copy>
+    <copy todir="${approot.stage.dir}/www">
+      <fileset dir="${gwt.output.dir}">
+				<exclude name=".gwt-tmp/" />
+				<exclude name="*-aux/" />
+      </fileset>
+    </copy>
+	</target>
+
+	<!-- =================================
+        jar (override)
+
+        creates all OAC jars
+       ================================= -->
+  <target name="jar" depends="subfloor.jar">
+    <jar destfile="${dist.dir}/${ivy.artifact.id}-messages-${project.revision}.jar">
+			<manifest>
+				<attribute name="Implementation-Title" value="${impl.title}" />
+				<attribute name="Implementation-Version" value="${impl.version}" />
+				<attribute name="Implementation-Vendor" value="${impl.vendor}" />
+				<attribute name="Implementation-ProductID" value="${impl.productID}" />
+			</manifest>
+			<fileset dir="${classes.dir}">
+				<include name="**/i18n/**" />
+			</fileset>
+			<fileset dir="${src.dir}">
+				<include name="**/i18n/*.properties" />
+			</fileset>
+		</jar>
+	</target>
+
+</project>

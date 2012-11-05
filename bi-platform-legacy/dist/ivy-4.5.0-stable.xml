@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="pentaho" module="pentaho-bi-platform-legacy" revision="4.5.0-stable" status="integration" publication="20121101165128"/>
+  <configurations>
+    <conf name="default" extends="default-ext"/>
+    <conf name="default-ext"/>
+    <conf name="test" visibility="private"/>
+  </configurations>
+  <dependencies defaultconf="default-ext->default">
+
+    <!--  external apache dependencies -->
+    <dependency org="commons-logging" name="commons-logging" rev="1.1" transitive="false"/>
+
+    <!--  external dependencies -->
+
+    <dependency org="dom4j" name="dom4j" rev="1.6.1">
+
+      <exclude org="xml-apis" name="xml-apis"/>
+
+    </dependency>
+    <dependency org="jfree" name="jcommon" rev="1.0.14"/>
+    <dependency org="jfree" name="jfreechart" rev="1.0.13">
+
+      <exclude org="jfree" name="jcommon"/>
+
+    </dependency>
+    <dependency org="quartz" name="quartz" rev="1.5.2">
+
+      <exclude org="commons-logging" name="commons-logging"/>
+
+    </dependency>   
+        
+    <!--  internal dependencies -->
+        
+    <!--  reporting -->
+    <dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions" rev="3.9.0-GA" changing="true">
+        <exclude org="pentaho" name="pentaho-xul-core"/>
+        <exclude org="javax.activation" name="activation"/>
+    </dependency>
+
+    <!-- platform -->
+
+    <dependency org="pentaho" name="pentaho-connections" rev="2.2.3" changing="true"/>
+    <dependency org="pentaho" name="pentaho-versionchecker" rev="2.0.1" changing="true"/>
+    <dependency org="pentaho" name="pentaho-actionsequence-dom" rev="2.3.4" changing="true"/>
+    
+    <dependency org="pentaho" name="pentaho-bi-platform-api" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-util" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-engine-core" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-engine-security" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-engine-services" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-scheduler" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-plugin-actions" rev="4.5.0-stable" changing="true" conf="default->default"/>
+
+  </dependencies>
+</ivy-module>

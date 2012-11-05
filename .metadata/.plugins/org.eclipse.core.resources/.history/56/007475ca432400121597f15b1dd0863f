@@ -1,0 +1,15 @@
+project.revision=4.5.0-stable
+
+tomcat.dir=/opt/apache-tomcat-7.0.27
+changelog.file=changelog.txt
+
+dependency.pentaho-cgg-plugin.revision=4.5-GA
+dependency.pentaho-cdf-plugin.revision=4.5-GA
+dependency.data-access-plugin.revision=4.5.0-GA
+dependency.common-ui.revision=1.0.2-GA
+
+dependency.reporting-engine.group=pentaho-reporting-engine
+dependency.pentaho-reporting.revision=3.9.0-GA
+dependency.pentaho-reporting-engine-classic-core-platform-plugin.revision=4.5.0-stable
+
+dependency.pentaho-big-data-plugin.revision=1.2.0

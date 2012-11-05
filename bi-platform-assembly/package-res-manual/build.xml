@@ -1,0 +1,182 @@
+<!-- ===============================================================================
+     project    Pentaho Application Server Deployments
+     description main build file for platform deployments
+
+     For instructions on how to use this file, read the comments in each target and see
+     http://wiki.pentaho.org/display/PentahoDoc/Manual+Deployment+of+Pentaho
+     ================================================================================ -->
+<project name="pentaho-deployments">
+	<description>
+		Pentaho BI Platform deployment build process...
+	</description>
+
+	<property file="override.properties" />
+	<property file="version.properties" />
+	<property file="build.properties" />
+
+	<!-- the impl properties are used to create the manifest file -->
+	<property name="impl.title" value="Pentaho BI Platform Community Edition" />
+	<property name="impl.vendor" value="Pentaho Corporation" />
+
+	<!-- ===================================================================
+        target: init
+       =================================================================== -->
+	<target name="init">
+		<!-- make dist directory structure -->
+		<mkdir dir="${build.wars.dir}" />
+	</target>
+
+	<!-- ===================================================================
+		  target: init-pentaho-wars
+
+		  This target makes replacements for database host, port, username, and password keys
+		  in the hibernate.cfg.xml files and the datasoure files used by
+		  jboss. This is what makes your pentaho war database specific.
+		  Check the build.properties file for the default replacements values.
+		  You can override these if you'd like. Note that this file looks for
+		  the defaults. If you are using this target as part of the manual
+		  deployments, the files in the pentaho-res folder should not be modified
+		  by the build. The entire folder is copied to the /build folder, and the
+		  replacements are made there. This way, the manual deployments package
+		  stays clean, and you can run the build multiple times with different
+		  values for the host, port, usernames, and passwords.
+		 =================================================================== -->
+	<target name="init-pentaho-wars">
+		<mkdir dir="${build.wars.dir}" />
+	</target>
+
+
+	<!-- ===================================================================
+        target: war-pentaho-jboss
+       =================================================================== -->
+	<target name="war-pentaho-jboss" depends="init, init-pentaho-wars, zip-pentaho-style-war">
+		<mkdir dir="${build.wars.dir}/jboss/no-portal" />
+
+		<manifest file="${build.wars.dir}/jboss/MANIFEST.MF">
+			<attribute name="Implementation-Title" value="${impl.title}" />
+			<attribute name="Implementation-Version" value="${impl.version}" />
+			<attribute name="Implementation-Vendor" value="${impl.vendor}" />
+		</manifest>
+
+		<!-- make war -->
+		<zip destfile="${build.wars.dir}/jboss/no-portal/pentaho.war" duplicate="preserve">
+
+			<!-- copy over any custom changes to webapp -->
+			<zipfileset dir="custom-pentaho-webapp" />
+
+			<zipfileset dir="${build.wars.dir}/jboss" prefix="META-INF">
+				<include name="MANIFEST.MF" />
+			</zipfileset>
+			<zipfileset dir="${webapp.dir}">
+				  <exclude name="**/WEB-INF/default-object.xml" />
+				  <exclude name="**/WEB-INF/jboss-app.xml" />
+				  <exclude name="**/WEB-INF/*portlet*.xml" />
+				  <exclude name="**/WEB-INF/*portal*.xml" />
+				  <exclude name="**/WEB-INF/jboss-classloading.xml" /> <!-- by default JBoss5 WARs deploy with a parent-first="false" isolated classloader -->
+			</zipfileset>
+			<zipfileset dir="${build.doc.dir}" />
+			<zipfileset dir="${build.third-party.dir}" prefix="WEB-INF/lib">
+				<!-- pentaho now has a dependency on portal-core-lib.jar. If you don't have jboss-portal installed, you need this -->
+				<!-- pentaho now has a dependency on hibernate3.jar. If you don't have jboss-portal installed, you need this -->
+				<!-- pentaho now has a dependency on ehcache.jar. If you don't have jboss-portal installed, you need this -->
+				<excludesfile name="excludejars-noportal.jboss" />
+			</zipfileset>
+			<zipfileset dir="${build.jars.dir}" prefix="WEB-INF/lib">
+				<excludesfile name="excludejars-noportal.jboss" />
+			</zipfileset>
+			<zipfileset dir="${build.classes.dir}" prefix="WEB-INF/classes">
+				<include name="**/messages/**" />
+			</zipfileset>
+			<zipfileset dir="${server.resource.dir}/jfreereport" prefix="WEB-INF/classes" />
+			<zipfileset dir="${server.resource.dir}/mondrian" prefix="WEB-INF/classes" />
+			<zipfileset dir="${server.resource.dir}/log4j" prefix="WEB-INF/classes" />
+			<zipfileset dir="${server.resource.dir}/ehcache" prefix="WEB-INF/classes" />
+
+		</zip>
+
+	</target>
+
+	<!-- ===================================================================
+        target: war-pentaho-jboss-no-portal
+		DEPRECATED! - Add distributions are now NO-PORTAL
+       =================================================================== -->
+	<target name="war-pentaho-jboss-no-portal" depends="war-pentaho-jboss" />
+
+
+	<!-- ===================================================================
+	        target: war-pentaho-tomcat
+	       =================================================================== -->
+	<target name="war-pentaho-tomcat" depends="init, init-pentaho-wars, zip-pentaho-style-war">
+		<mkdir dir="${build.wars.dir}/tomcat/" />
+
+		<manifest file="${build.wars.dir}/tomcat/MANIFEST.MF">
+			<attribute name="Implementation-Title" value="${impl.title}" />
+			<attribute name="Implementation-Version" value="${impl.version}" />
+			<attribute name="Implementation-Vendor" value="${impl.vendor}" />
+		</manifest>
+
+		<!-- war pentaho -->
+		<zip destfile="${build.wars.dir}/tomcat/pentaho.war" duplicate="preserve">
+
+			<!-- copy over any custom changes to webapp -->
+			<zipfileset dir="custom-pentaho-webapp" />
+
+			<zipfileset dir="${build.wars.dir}/tomcat" prefix="META-INF">
+				<include name="MANIFEST.MF" />
+			</zipfileset>
+			<zipfileset dir="${webapp.dir}">
+				<exclude name="**/WEB-INF/default-object.xml" />
+				<exclude name="**/WEB-INF/jboss-app.xml" />
+				<exclude name="**/WEB-INF/jboss-portlet.xml" />
+				<exclude name="**/WEB-INF/jboss-web.xml" />
+				<exclude name="**/WEB-INF/portlet-instances.xml" />
+			</zipfileset>
+			<zipfileset dir="${build.doc.dir}" />
+			<zipfileset dir="${build.third-party.dir}" prefix="WEB-INF/lib">
+				<excludesfile name="excludejars.generic" />
+				<exclude name="gnu-regexp.jar" />
+			</zipfileset>
+			<zipfileset dir="${build.jars.dir}" prefix="WEB-INF/lib">
+				<!-- exclude name="pentaho-i18n*.jar" / -->
+			</zipfileset>
+			<zipfileset dir="${build.classes.dir}" prefix="WEB-INF/classes">
+				<include name="**/messages/**" />
+			</zipfileset>
+			<zipfileset dir="${server.resource.dir}/jfreereport" prefix="WEB-INF/classes" />
+			<zipfileset dir="${server.resource.dir}/mondrian" prefix="WEB-INF/classes" />
+			<zipfileset dir="${server.resource.dir}/log4j" prefix="WEB-INF/classes" />
+			<zipfileset dir="${server.resource.dir}/ehcache" prefix="WEB-INF/classes" />
+
+		</zip>
+
+	</target>
+
+	<!-- ===================================================================
+	       target: zip-pentaho-style-war
+
+	       Create the pentaho-style.war.
+	      =================================================================== -->
+	<target name="zip-pentaho-style-war" depends="init">
+		<zip destfile="${build.wars.dir}/pentaho-style.war">
+			<zipfileset dir="${server.resource.dir}/styles/pentaho-style.war" />
+		</zip>
+	</target>
+
+
+	<!-- ===================================================================
+        target: build-all
+       =================================================================== -->
+	<target name="build-all" depends="zip-pentaho-style-war, war-pentaho-tomcat, war-pentaho-jboss" />
+
+
+	<!-- ===================================================================
+        target: help
+       =================================================================== -->
+	<target name="help" >
+		<echo>
+		    Pentaho Manual Deoployment build script
+
+			usage: ant -Darchive.target=[target] -Ddb=[database]
+		</echo>
+	</target>
+</project>

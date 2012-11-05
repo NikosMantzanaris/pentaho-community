@@ -1,0 +1,92 @@
+Nov 5, 2012 11:42:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Nov 5, 2012 11:42:16 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Nov 5, 2012 11:42:26 AM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet /pentaho threw load() exception
+javax.servlet.ServletException: missing jspFile
+	at org.apache.jasper.servlet.JspServlet.init(JspServlet.java:123)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1266)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1185)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1080)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5027)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5314)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1105)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1664)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Nov 5, 2012 11:42:26 AM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet /pentaho threw load() exception
+javax.servlet.ServletException: missing jspFile
+	at org.apache.jasper.servlet.JspServlet.init(JspServlet.java:123)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1266)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1185)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1080)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5027)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5314)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1105)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1664)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Nov 5, 2012 11:42:26 AM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet /pentaho threw load() exception
+javax.servlet.ServletException: missing jspFile
+	at org.apache.jasper.servlet.JspServlet.init(JspServlet.java:123)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1266)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1185)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1080)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5027)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5314)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1105)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1664)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Nov 5, 2012 11:42:26 AM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet /pentaho threw load() exception
+javax.servlet.ServletException: missing jspFile
+	at org.apache.jasper.servlet.JspServlet.init(JspServlet.java:123)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1266)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1185)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1080)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5027)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5314)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1105)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1664)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Nov 5, 2012 11:42:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+Nov 5, 2012 12:38:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext

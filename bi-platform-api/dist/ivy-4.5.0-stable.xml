@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+    <info organisation="pentaho" module="pentaho-bi-platform-api" revision="4.5.0-stable" status="integration" publication="20121101164927"/>
+    
+    <configurations>
+    	<conf name="default"/>
+    	<conf name="test" visibility="private"/>
+    	<conf name="source"/>    	
+    </configurations>
+    
+    <publications>
+	    <artifact name="pentaho-bi-platform-api" type="jar" conf="default"/>
+	    <artifact name="pentaho-bi-platform-api" m:classifier="sources" type="source" ext="jar" conf="source"/>
+    </publications>   
+    
+    <dependencies defaultconf="default->default">
+        <!--  external dependencies -->
+        <dependency org="commons-logging" name="commons-logging" rev="1.1" transitive="false"/>
+        <dependency org="dom4j" name="dom4j" rev="1.6.1" transitive="false"/>
+        <dependency org="org.springframework.security" name="spring-security-core" rev="2.0.5.RELEASE" transitive="false"/>
+        
+        
+        <!--  internal dependencies -->
+        <dependency org="pentaho" name="pentaho-connections" rev="2.2.3" changing="true"/>
+        <dependency org="pentaho" name="pentaho-actionsequence-dom" rev="2.3.4" changing="true"/>
+        <dependency org="pentaho" name="pentaho-xul-core" rev="3.3.4" changing="true"/>
+    </dependencies>
+</ivy-module>

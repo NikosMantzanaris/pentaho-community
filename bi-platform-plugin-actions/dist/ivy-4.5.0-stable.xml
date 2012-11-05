@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="pentaho" module="pentaho-bi-platform-plugin-actions" revision="4.5.0-stable" status="integration" publication="20121101165051"/>
+  <configurations>
+    <conf name="default" extends="default-ext"/>
+    <conf name="default-ext"/>
+    <conf name="test" visibility="private"/>
+    <conf name="source"/>    
+  </configurations>
+  
+   <publications>
+     <artifact name="pentaho-bi-platform-plugin-actions" type="jar" conf="default"/>
+     <artifact name="pentaho-bi-platform-plugin-actions" m:classifier="sources" type="source" ext="jar" conf="source"/>
+   </publications>
+  
+  <dependencies defaultconf="default-ext->default">
+        <!--  external javax dependencies -->
+    <dependency org="javax.mail" name="mail" rev="1.4.1" transitive="false"/>
+        
+        <!--  external apache dependencies -->
+    <dependency org="commons-io" name="commons-io" rev="1.4"/>
+    <dependency org="commons-logging" name="commons-logging" rev="1.1" transitive="false"/>
+    <dependency org="commons-vfs" name="commons-vfs" rev="1.0" transitive="false"/>
+    <dependency org="commons-lang" name="commons-lang" rev="2.2"/>
+
+    <dependency org="log4j" name="log4j" rev="1.2.16"/>
+    <dependency org="org.springframework" name="spring" rev="2.5.6" transitive="false"/>
+		
+        <!--  external birt dependencies -->
+    <dependency org="com.ibm.icu" name="icu4j" rev="3.6.1"/>
+    <dependency org="org.eclipse.birt" name="coreapi" rev="2.2.1"/>
+    <dependency org="org.eclipse.birt" name="engineapi" rev="2.2.1"/>
+    <dependency org="org.eclipse.birt" name="modelapi" rev="2.2.1"/>
+
+        <!--  external dependencies -->
+    <dependency org="org.springframework.security" name="spring-security-core" rev="2.0.5.RELEASE" transitive="false"/>
+    <dependency org="jfree" name="jcommon" rev="1.0.14"/>
+    <dependency org="dom4j" name="dom4j" rev="1.6.1" transitive="false"/>
+    <dependency org="jfree" name="jfreechart" rev="1.0.13">
+      <exclude org="jfree" name="jcommon"/>
+    </dependency>
+    <dependency org="jasperreports" name="jasperreports" rev="2.0.5" transitive="false"/>
+    <dependency org="net.sf.saxon" name="saxon" rev="8.5.1"/>
+    <dependency org="quartz" name="quartz" rev="1.5.2">
+      <exclude org="commons-logging" name="commons-logging"/>
+    </dependency>
+    <dependency org="org.hibernate" name="hibernate" rev="3.2.6.ga">
+      <exclude org="commons-logging" name="commons-logging"/>
+      <exclude org="commons-collections" name="commons-collections"/>
+      <exclude org="dom4j" name="dom4j"/>
+      <exclude org="net.sf.ehcache" name="ehcache"/>
+      <!-- CM-241 -->
+      <exclude org="cglib" name="cglib"/>
+    </dependency>
+    <dependency org="org.apache.xmlgraphics" name="fop" rev="0.94" transitive="false"/>
+    <!-- CM-241 -->
+    <dependency org="cglib" name="cglib-nodep" rev="2.1_3" transitive="false"/>
+    <dependency org="rhino" name="js" rev="1.7R1"/>
+    <!--  open flash chart json builder -->
+    <dependency org="com.thoughtworks.xstream" name="xstream" rev="1.3.1"/>
+    
+    <!--  this is a runtime dependency, used sometimes in JavascriptRules (CDF) as well as plugins (XDASH) -->
+    <dependency org="org.json" name="json" rev="3.1.1" transitive="false" changing="true"/>
+    
+    <!--  external lib/xml dependencies -->
+    <dependency org="jaxen" name="jaxen" rev="1.1" transitive="false"/>
+    <dependency org="xerces" name="xercesImpl" rev="2.8.1">
+      <exclude org="xml-apis" name="xml-apis"/>
+    </dependency>
+    <dependency org="xml-apis" name="xml-apis" rev="1.0.b2"/> <!--  Changede rev:2.0.2 to rev:1.0.b2 as the maven2 pom indicates this should be so -->
+ 
+        <!--  internal dependencies -->
+        
+        <!--  charting  -->
+    <dependency org="pentaho" name="pentaho-chartbeans" rev="1.0.12" changing="true"/>
+        
+	<!--  Pentaho Reporting Library -->
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-core" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions-hibernate" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions-kettle" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions-mondrian" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions-olap4j" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions-pmd" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions-reportdesigner-parser" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions-sampledata" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions-scripting" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions-xpath" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions-drill-down" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-classic-extensions-toc" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-legacy-charts" rev="3.9.0-GA" changing="true"/>
+	<dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-legacy-functions" rev="3.9.0-GA" changing="true"/>
+  <dependency org="pentaho-reporting-engine" name="pentaho-reporting-engine-wizard-core" rev="3.9.0-GA" changing="true" transitive="false"/>
+  <dependency org="pentaho" name="pentaho-report-wizard-core" rev="3.2.1" changing="true" transitive="false"/>
+
+
+        <!-- metadata -->
+    <dependency org="pentaho" name="pentaho-metadata" rev="3.4.5" changing="true" transitive="false"/>
+
+				<!-- kettle and dependencies -->	
+    <dependency org="pentaho-kettle" name="kettle-engine" rev="4.3.0-stable" conf="default->default"/>
+    <dependency org="pentaho-kettle" name="kettle-core" rev="4.3.0-stable" conf="default->default"/>
+    <dependency org="pentaho-kettle" name="kettle-db" rev="4.3.0-stable" conf="default->default"/>
+    <dependency org="org.snmp4j" name="snmp4j" rev="1.9.3d" conf="default->default" transitive="false"/>
+    <dependency org="pentaho" name="salesforce-partner" rev="24.0" conf="default->default" transitive="false"/>
+    <dependency org="rome" name="rome" rev="0.9" conf="default->default" transitive="false"/>
+    <dependency org="georss-rome" name="georss-rome" rev="0.9.8" conf="default->default" transitive="false"/>
+    <dependency org="feed4j" name="feed4j" rev="1.0" conf="default->default" transitive="false"/>
+    <dependency org="net.sourceforge.nekohtml" name="nekohtml" rev="0.9.5" conf="default->default" transitive="false"/>
+    <dependency org="janino" name="janino" rev="2.5.x" conf="default->default" transitive="false"/>
+        <!-- olap -->
+    <dependency org="pentaho" name="mondrian" rev="3.4.1" changing="true">
+        <exclude org="commons-dbcp" name="commons-dbcp"/>
+        <exclude org="javax.servlet" name="jsp-api"/>
+        <exclude org="javax.servlet" name="servlet-api"/>
+    </dependency>
+	<dependency org="com.googlecode.json-simple" name="json-simple" rev="1.1" transitive="false" conf="default->default" changing="false"/>
+	<dependency org="jsonpath" name="jsonpath" rev="1.0" transitive="false" conf="default->default" changing="false"/>
+    
+	<!--  BigData dependencies -->      
+	<dependency org="org.apache.hadoop.hive" name="hive-jdbc" rev="0.7.0-pentaho-1.0.1" transitive="true" conf="default->default">
+		<!-- Do not include commons logging or log4j here.  They are already fetched with the default configuration. -->
+		<exclude org="commons-logging"/>
+		<exclude org="log4j"/>
+		<exclude org="org.apache.hadoop"/>
+	</dependency>
+	<dependency org="org.apache.hadoop" name="hadoop-core" rev="0.20.2" transitive="false" conf="default->default" changing="false"/>
+	<dependency org="org.apache.hbase" name="hbase" rev="0.90.3" transitive="false" conf="default->default" changing="false"/>
+	<dependency org="org.apache.zookeeper" name="zookeeper" rev="3.3.2" transitive="false" conf="default->default" changing="false"/>
+	<dependency org="pentaho" name="pentaho-hdfs-vfs" rev="1.0.2" transitive="false" conf="default->default" changing="true"/>
+	<dependency org="pentaho" name="pentaho-s3-vfs" rev="1.0.2" transitive="true" conf="default->default" changing="true"/>
+ 
+        <!-- platform -->
+    <dependency org="pentaho" name="pentaho-connections" rev="2.2.3" changing="true"/>
+    <dependency org="pentaho" name="pentaho-versionchecker" rev="2.0.1" changing="true"/>
+    <dependency org="pentaho" name="pentaho-actionsequence-dom" rev="2.3.4" changing="true"/>
+    
+    <dependency org="pentaho" name="pentaho-bi-platform-api" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-util" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-engine-core" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-engine-security" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-engine-services" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-repository" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-plugin-services" rev="4.5.0-stable" changing="true" conf="default->default"/>
+    <dependency org="pentaho" name="pentaho-bi-platform-ui-foundation" rev="4.5.0-stable" changing="true" conf="default->default"/>        
+
+        <!--  testing dependencies -->
+    <dependency org="junit" name="junit" rev="4.4" conf="test->default"/>
+    <dependency org="com.dumbster" name="dumbster" rev="1.6.0" conf="test->default"/>
+    <dependency org="com.mockrunner" name="mockrunner" rev="0.3.1" conf="test->default"/>
+    
+    <dependency org="pentaho" name="pentaho-bi-platform-test-foundation" rev="4.5.0-stable" changing="true" conf="test->default" transitive="false"/>
+    <dependency org="hsqldb" name="hsqldb" rev="1.8.0.7" conf="test->default"/>
+
+    <exclude org="org.apache.xmlgraphics" module="batik-js"/>
+  </dependencies>
+</ivy-module>
